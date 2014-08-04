@@ -1,0 +1,23 @@
+{
+  "name": "Miguet Carole / Bokobza Samuel",
+  "version": "0.0.1",
+  "homepage": "https://github.com/samuelboko/samuelboko.github.io",
+  "authors": [
+    "Bokobza / Miguet"
+  ],
+  "description": "Projet fin d'année DM-07",
+  "main": "index.php",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "jquery": "~2.1.1"
+  }
+}

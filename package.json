@@ -1,0 +1,36 @@
+{
+  "name": "samuelboko.github.io",
+  "version": "0.0.0",
+  "description": "Projet de fin d'année ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samuelboko/samuelboko.github.io"
+  },
+  "author": "Bokobza Samuel / Miguet Carole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samuelboko/samuelboko.github.io/issues"
+  },
+  "homepage": "https://github.com/samuelboko/samuelboko.github.io",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-imagemin": "^0.7.1",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-qunit": "^0.5.2",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "imagemin": "^0.4.6",
+    "imagemin-mozjpeg": "^0.1.2",
+    "jshint": "^2.5.2",
+    "qunit": "^0.7.2"
+  }
+}
