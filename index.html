@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Projet fin d'année</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="public/assets/SASS/css/app.css">
         <!--[if lt IE 9]>
@@ -18,23 +19,79 @@
 
 
 
-        <header class="page-header">
-            <a href="#"><img src="public/assets/images/logo.png" alt="" class="img-responsive img-circle"></a>
-            <h1 class="titre">Go Mobility <small>Le transport écolo</small></h1>
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="active"><a href="#">Accueil</a></li>
-                <li><a href="#">Vos expériences</a></li>
-                <li><a href="#">Je participe</a></li>
-            </ul>
+        <header class="header page-header container-fluid">
+            <div class="row">
+            <a href="#" class="header-logo">
+                <img class="img-circle" src="public/assets/images/logo.png" alt="Logo">
+            </a>
+            <h1 class="header-titre col-md-6">Go Mobility </h1>
+                <ul class="nav nav-pills col-md-5 header-navigation" role="navigation">
+                    <li class="active"><a href="#" class="header-menu-item">Le Projet</a></li>
+                    <li><a href="#" class="header-menu-item">Vos Expériences</a></li>
+                    <li><a href="#" class="header-menu-item">Je Participe</a></li>
+                </ul>
+            </div>
         </header>
 
+        <div class="container-fluid container">
+            <div class="row">
+                    <ol class="breadcrumb col-md-3">
+                        <li><a href="#">Accueil</a></li>
+                    </ol>
+            </div>
+            
+            <div class="container-fluid aside">
+                <aside class="side">
+                    <ul>
+                        <li>Engagés <span class="badge">5831</span></li>
+                        <li>Meilleurs "eco-acteur"</li>
+                        <li>Appli Mobile</li>
+                    </ul>
+                </aside>
+            
+                <aside class="side">
+                    <h4>Actualité</h4>
+                    <ul>
+                        <li>Bienvenue à Mimi</li>
+                        <li>Aujourd'hui <span class="badge">31</span> nouveaux</li>
+                    </ul>
+                </aside>
+            
+                <aside class="side">
+                    <h4>Nous retrouver</h4>
+                    <ul>
+                        <li><span class="glyphicon glyphicon-twitter"></span></li>
+                        <li></li>
+                    </ul>
+                </aside>
+           </div>
+        </div>
+
+        <footer class="footer page-footer container-fluid">
+            <div class="row">
+                <div class="col-md-6 mentions">
+                    <ul class="nav">
+                        <li class="fotter-item"><a href="#">Metions légales</a></li>
+                        <li class="fotter-item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 partenaires">
+                    <ul class="nav">
+                        <li class="fotter-item"><a href="#">Ardeche</a></li>
+                        <li class="fotter-item"><a href="#">Conseil géneral</a></li>
+                    </ul>
+                </div>
+            </div>
+        <footer/>
 
 
 
 
 
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="public/assets/js/app.js"></script>
     </body>
 </html>
