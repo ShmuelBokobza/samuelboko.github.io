@@ -1,2 +1,84 @@
+html {
+  background-color: #ecf0f1; }
+
 body {
-  background-color: #3498db; }
+  background-color: #ecf0f1;
+  width: 100%;
+  margin-top: -40px;
+  font-family: "Open sans" sans-serif;
+  line-height: 1.75;
+  font-size: 1em;
+  color: #737373; }
+
+h2 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  color: #000; }
+
+a {
+  font-size: 2em;
+  color: #737373;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none;
+    color: #ecf0f1; }
+
+header {
+  background-color: #7ed2ec; }
+
+.header-logo {
+  float: left;
+  margin: 12px; }
+
+.header-menu {
+  float: right; }
+
+.header-titre {
+  margin-top: 52px; }
+
+.header-navigation {
+  float: right;
+  margin-top: 40px; }
+
+.nav > li > a:hover {
+  background-color: #1b91b6; }
+
+.nav > li.active > a {
+  background-color: #1b91b6; }
+
+.container {
+  height: 600px; }
+
+.breadcrumb {
+  float: left; }
+  .breadcrumb a {
+    font-size: 1.5em;
+    color: #34495e; }
+
+.side {
+  width: 215px;
+  float: right;
+  background-color: whitesmoke;
+  margin: 20px;
+  padding: 12px;
+  border: 1px ridge #34495e; }
+  .side li {
+    font-size: 1.3em;
+    list-style-type: circle; }
+  .side h4 {
+    text-decoration: underline; }
+
+.aside {
+  float: right;
+  width: 25%; }
+
+.mentions, .partenaires {
+  float: left;
+  border-top: 2px solid #737373;
+  padding-left: 75px; }
+  .mentions a, .partenaires a {
+    font-size: 1.5em;
+    float: left; }
+
+.partenaires {
+  float: right; }

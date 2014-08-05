@@ -1,0 +1,32 @@
+.container {
+	height: 600px;
+}
+
+.breadcrumb{
+	float: left;
+	a {
+		font-size: 1.5em;
+		color: $bleufonce;
+	}
+}
+
+.side{
+	width: 215px;
+	float: right;
+	background-color: $blancbody;
+	margin: 20px; 
+	padding: 12px; 	
+	border: 1px ridge $bleufonce;
+	li{
+		font-size: 1.3em;
+		list-style-type: circle; 
+	}
+	h4{
+		text-decoration: underline;
+	}
+}
+
+.aside {
+	float: right;
+	width: 25%;
+}
