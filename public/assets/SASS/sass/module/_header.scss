@@ -11,6 +11,7 @@ header{
 }
 
 .header-titre{
+	color:$blanc;
 	margin-top: 52px;
 }
 
@@ -24,4 +25,8 @@ header{
 }
 .nav > li.active > a {
 	background-color:darken($bleu, 30%);
+}
+
+.page-header {
+	padding-bottom: 0px;
 }

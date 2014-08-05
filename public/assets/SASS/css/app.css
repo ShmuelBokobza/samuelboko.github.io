@@ -17,11 +17,14 @@ h2 {
 
 a {
   font-size: 2em;
-  color: #737373;
+  color: #ecf0f1;
   text-decoration: none; }
   a:hover {
     text-decoration: none;
     color: #ecf0f1; }
+
+.header, .footer {
+  width: 100%; }
 
 header {
   background-color: #7ed2ec; }
@@ -34,6 +37,7 @@ header {
   float: right; }
 
 .header-titre {
+  color: #ecf0f1;
   margin-top: 52px; }
 
 .header-navigation {
@@ -46,8 +50,11 @@ header {
 .nav > li.active > a {
   background-color: #1b91b6; }
 
+.page-header {
+  padding-bottom: 0px; }
+
 .container {
-  height: 600px; }
+  height: auto; }
 
 .breadcrumb {
   float: left; }
@@ -56,28 +63,27 @@ header {
     color: #34495e; }
 
 .side {
-  width: 215px;
+  width: 100%;
   float: right;
-  background-color: whitesmoke;
-  margin: 20px;
-  padding: 12px;
-  border: 1px ridge #34495e; }
+  margin: 20px; }
   .side li {
-    font-size: 1.3em;
-    list-style-type: circle; }
+    font-size: 1.3em; }
   .side h4 {
-    text-decoration: underline; }
+    font-size: 2.5em; }
 
 .aside {
   float: right;
   width: 25%; }
 
+footer {
+  background-color: #7ed2ec; }
+
 .mentions, .partenaires {
   float: left;
-  border-top: 2px solid #737373;
   padding-left: 75px; }
   .mentions a, .partenaires a {
     font-size: 1.5em;
+    color: #ecf0f1;
     float: left; }
 
 .partenaires {

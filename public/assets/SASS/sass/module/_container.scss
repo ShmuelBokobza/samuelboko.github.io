@@ -1,5 +1,5 @@
 .container {
-	height: 600px;
+	height: auto;
 }
 
 .breadcrumb{
@@ -11,19 +11,18 @@
 }
 
 .side{
-	width: 215px;
+	width: 100%;
 	float: right;
-	background-color: $blancbody;
-	margin: 20px; 
-	padding: 12px; 	
-	border: 1px ridge $bleufonce;
+	margin: 20px;
 	li{
 		font-size: 1.3em;
-		list-style-type: circle; 
 	}
 	h4{
-		text-decoration: underline;
+		font-size:2.5em;
 	}
+}
+
+.list-group-item{
 }
 
 .aside {
