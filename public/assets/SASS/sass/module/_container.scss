@@ -1,4 +1,5 @@
 .container {
+	width: 90%;
 	height: auto;
 }
 
@@ -6,8 +7,19 @@
 	float: left;
 	a {
 		font-size: 1.5em;
-		color: $bleufonce;
+		font-weight:bold ;
+		color:$violet;
+		&:hover {
+			color:lighten($violet, 20%);
+
+		};
 	}
+}
+
+
+.aside {
+	float: right;
+	width: 25%;
 }
 
 .side{
@@ -23,9 +35,31 @@
 }
 
 .list-group-item{
+	border:0px;
+	border-top:1px solid $blanc;
+	&:first-child{
+		border-top-left-radius:0px;
+		border-top-right-radius:0px;
+	}
 }
 
-.aside {
-	float: right;
-	width: 25%;
+.badge{
+	background-color: $vert;
+}
+
+.social{
+	height: auto;
+	width : auto;
+	color : $socialfb;
+	margin-right: 12px;
+}
+
+.fa-twitter-square{
+	@extend .social;
+	color : $socialtw;
+}
+
+.fa-google-plus-square{
+	@extend .social;
+	color : $socialgp;
 }

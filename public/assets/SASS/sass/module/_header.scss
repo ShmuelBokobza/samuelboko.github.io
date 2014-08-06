@@ -17,15 +17,24 @@ header{
 
 .header-navigation{
 	float: right;
-	margin-top: 40px;
 
 }
-.nav > li > a:hover{
-	background-color:darken($bleu, 30%);
+.nav-pills > li > a{
+	border-radius: 0px;
+	&:hover{
+	background-color:darken($bleu, 50%);}
+	
 }
-.nav > li.active > a {
-	background-color:darken($bleu, 30%);
+
+.nav-pills>li.active>a {
+	background-color:darken($bleu, 50%);
+	color:lighten($blanc, 10%);
+	border-radius: 0px;
+	&:hover{
+	background-color:darken($bleu, 30%);}
+
 }
+
 
 .page-header {
 	padding-bottom: 0px;

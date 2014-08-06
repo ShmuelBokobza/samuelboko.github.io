@@ -4,16 +4,20 @@ html {
 body {
   background-color: #ecf0f1;
   width: 100%;
+  margin: 0 auto;
   margin-top: -40px;
   font-family: "Open sans" sans-serif;
   line-height: 1.75;
   font-size: 1em;
   color: #737373; }
 
+h1 {
+  font-size: 7.125em; }
+
 h2 {
   font-size: 1.2em;
   line-height: 1.25;
-  color: #000; }
+  color: #ecf0f1; }
 
 a {
   font-size: 2em;
@@ -41,26 +45,39 @@ header {
   margin-top: 52px; }
 
 .header-navigation {
-  float: right;
-  margin-top: 40px; }
+  float: right; }
 
-.nav > li > a:hover {
-  background-color: #1b91b6; }
+.nav-pills > li > a {
+  border-radius: 0px; }
+  .nav-pills > li > a:hover {
+    background-color: #0e4a5d; }
 
-.nav > li.active > a {
-  background-color: #1b91b6; }
+.nav-pills > li.active > a {
+  background-color: #0e4a5d;
+  color: white;
+  border-radius: 0px; }
+  .nav-pills > li.active > a:hover {
+    background-color: #1b91b6; }
 
 .page-header {
   padding-bottom: 0px; }
 
 .container {
+  width: 90%;
   height: auto; }
 
 .breadcrumb {
   float: left; }
   .breadcrumb a {
     font-size: 1.5em;
-    color: #34495e; }
+    font-weight: bold;
+    color: #9b59b6; }
+    .breadcrumb a:hover {
+      color: #c6a0d5; }
+
+.aside {
+  float: right;
+  width: 25%; }
 
 .side {
   width: 100%;
@@ -71,9 +88,27 @@ header {
   .side h4 {
     font-size: 2.5em; }
 
-.aside {
-  float: right;
-  width: 25%; }
+.list-group-item {
+  border: 0px;
+  border-top: 1px solid #ecf0f1; }
+  .list-group-item:first-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px; }
+
+.badge {
+  background-color: #2ecc71; }
+
+.social, .fa-twitter-square, .fa-google-plus-square {
+  height: auto;
+  width: auto;
+  color: #2980b9;
+  margin-right: 12px; }
+
+.fa-twitter-square {
+  color: #3498db; }
+
+.fa-google-plus-square {
+  color: #e74c3c; }
 
 footer {
   background-color: #7ed2ec; }
