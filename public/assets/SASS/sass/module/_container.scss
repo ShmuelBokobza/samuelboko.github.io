@@ -36,7 +36,6 @@
 
 .list-group-item{
 	border:0px;
-	border-top:1px solid $blanc;
 	&:first-child{
 		border-top-left-radius:0px;
 		border-top-right-radius:0px;
@@ -51,7 +50,7 @@
 	height: auto;
 	width : auto;
 	color : $socialfb;
-	margin-right: 12px;
+	margin-left: 26px;
 }
 
 .fa-twitter-square{

@@ -89,8 +89,7 @@ header {
     font-size: 2.5em; }
 
 .list-group-item {
-  border: 0px;
-  border-top: 1px solid #ecf0f1; }
+  border: 0px; }
   .list-group-item:first-child {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px; }
@@ -102,7 +101,7 @@ header {
   height: auto;
   width: auto;
   color: #2980b9;
-  margin-right: 12px; }
+  margin-left: 26px; }
 
 .fa-twitter-square {
   color: #3498db; }
