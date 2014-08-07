@@ -12,11 +12,33 @@
 		&:hover {
 			color:lighten($violet, 20%);
 
-		};
+		}
 	}
 }
 
+.container-block{
+	width: 70%;
+	float: left;
+	/* background-color: $blancbody; */
+}
 
+.newsblock{
+	height: auto;
+	background-color: $blancbody;
+	padding: 26px; 
+	&:h2{
+	color:$bleufonce;
+	}.bg-success{
+		width: 50%;
+		background-color: lighten($vert, 20%);
+		padding: 5px 5px 5px 5px;
+	}p{
+		font-size: 1.5em;
+		line-height: 1.75; 
+	}a{
+		font-size: 1.5em
+	}
+}
 .aside {
 	float: right;
 	width: 25%;

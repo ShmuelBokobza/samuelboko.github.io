@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Go Mobility Examen Bokobza Miguet">
+        <meta name="author" content="Bokobza Samuel / Miguet Carole">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Projet fin d'année</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../bower_components/fontawesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../SASS/css/app.css">
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+
+
+
+
+        <header class="header page-header container-fluid">
+            <div class="row">
+            <a href="../../../index.html" class="header-logo">
+                <img class="img-circle" src="../../../public/assets/images/logo.png" alt="Logo">
+            </a>
+            <h1 class="header-titre">Go Mobility </h1>
+                <ul class="nav nav-pills col-md-5 header-navigation" role="navigation">
+                    <li class="active"><a href="../../../index.html" class="header-menu-item">Le Projet</a></li>
+                    <li><a href="experiences (2).html" class="header-menu-item">Vos Expériences</a></li>
+                    <li><a href="participer.html" class="header-menu-item">Je Participe</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container-fluid container">
+            <div class="row">
+                <ul class="breadcrumb col-md-3">
+                    <li><a href="#">Accueil</a></li>
+                </ul>
+            </div>
+            
+            <!-- BLOC PARCOURS -->
+  <!-- titre-->
+  <div class="titleblock">
+    <h1 class="title">[DEPART] - [DESTINATION] [TransportTrajet]</h1>
+    <small>par <a href="#">Auteur</a> le 10/07/2014</small>
+    <div class="infos-parcours">
+      Parcours touristique <a href="#"><span class="info">FACILE</span></a>
+  <!--Stars-->
+      <div style="star-block">
+        <input id="input-21e"  type="number" class="rating" min=0 max=5 step=1 data-size="xs" readonly="true" showClear="false" value="2">
+      </div>
+    </div>
+  </div>
+
+    <!--map-->
+    <div id="container">
+        <div id="map">
+            <p>Chargement de la carte...</p>
+        </div>
+    </div>
+
+    <!-- formulaire départ/destination/mode de transport -->
+    <!--Qui sera ensuite rempli en input hidden pour générer la carte-->
+
+    <div id="destinationForm">
+     <form action="" method="get" name="direction" id="direction">
+         <label>Point de départ :</label>
+         <input type="text" name="origin" id="origin">
+         <label>Destination :</label>
+         <input type="text" name="destination" id="destination">
+         <label>Moyen de transport</label>
+         <select name="transport" id="transport" class="form-control">
+              <option  value="WALKING">à pied</option>
+              <option value="BICYCLING" >en vélo</option>
+              <option value="TRANSIT">en transports en commun</option>
+              <option value="DRIVING">en covoiturage</option>
+        </select>
+         <input type="button" value="Calculer l'itinéraire" onclick="javascript:calculate()">
+     </form>
+ 
+ </div>
+
+ <!-- Button Détail du parcours -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Détails du parcours
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">[depart]-[destination] - [mode]</h4>
+      </div>
+      <div class="modal-body">
+        <div id="panel"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <a href="javascript:window.print()">
+        <button type="button" class="btn btn-primary">Imprimer</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--infos-->  
+  <div class="table-responsive">
+      <table class="table info">
+        <tr>
+          <td><span class="temps">1h 21m 43s</span></td>
+          <td><span class="kcal">150 Kcal</span></td>
+        </tr>
+        <tr>
+          <td><span class="km">15,7 Km</span></td>
+          <td><span class="co2">150 gCo2</span></td>
+        </tr>
+      </table>
+  </div>
+  <!--description-->
+  <div class="full-text">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+<!--Bloc AUTEUR--> 
+
+  <div class="author">
+    <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object img-circle" src="http://csimg.webmarchand.com/srv/FR/28018519170650/T/140x140/C/FFFFFF/url/perruque-blonde-courte-homme.jpg" alt="...">
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">User Name</h4>
+        <p>Description de l'utilisateur</p>
+        <a href="#">Voir tous les parcours de Auteur</a>
+      </div>
+    </div>
+  </div>
+
+<!--Bloc COMMENTAIRES-->
+
+<h2>Derniers avis</h2>
+  <div class="comments">
+    <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object img-circle" src="http://media-cache-ec0.pinimg.com/avatars/unblogunefille_1401466398_140.jpg" alt="...">
+       <span>Jojo</span>
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Super parcours !</h4>
+        Vraiment top le parcours c'était trop bien !
+      </div>
+    </div>
+
+    <div class="media">
+      <a class="pull-left" href="#">
+        <img class="media-object img-circle" src="http://images.critictoo.com/wp-content/uploads/2008/09/smg.jpg" alt="...">
+       <span> Maya l'abeille</span>
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">Pas mal...</h4>
+        J'ai mieux ....
+      </div>
+    </div>
+  </div>
+
+<!--Bloc FORMULAIRE COMMENTAIRES-->
+
+<!--Si l'utilisateur est connecté -->
+<h2>Donnez votre avis !</h2>
+  <div class="form-comments">
+    <div class="media">
+        <a class="pull-left" href="#">
+          <img class="media-object img-circle" src="http://images.critictoo.com/wp-content/uploads/2008/09/smg.jpg" alt="...">
+          <span>Maya l'abeille</span>
+        </a>
+       <div class="media-body">
+            <form role="form">
+                <br>
+                <input id="input-21e" value="0" type="number" class="rating" min=0 max=5 step=1 data-size="xs" >
+                <br>
+                <textarea class="form-control" id="commentaire" rows="3"></textarea>
+                <button type="button" class="btn btn-success">Donner mon avis !</button>
+              </div>
+            </form>
+          </div>
+    </div>
+  </div>
+<!--Si l'utilisateur n'est pas connecté -->
+  <button type="button" class="btn btn-primary">Connectez-vous pour donner votre avis sur ce trajet !</button>
+<div class="container-fluid aside">
+                <aside class="side">
+                   <ul class="list-group first-block">
+                        <li class="list-group-item"><span class="badge">5831</span>Engagés </li>
+                        <li class="list-group-item">Meilleurs "eco-acteur"</li>
+                        <li class="list-group-item">Appli Mobile</li>
+                    </ul>
+                </aside>
+
+            
+                <aside class="side">
+                    <h4>Actualité</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">Bienvenue à Mimi</li>
+                        <li class="list-group-item">Aujourd'hui <span class="badge">31</span> nouveaux</li>
+                    </ul>
+                </aside>
+            
+                <aside class="side">
+                    <h4>Nous retrouver</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <i class="social fa fa-facebook-square fa-5x"></i>
+                            <i class="social fa fa-twitter-square fa-5x"></i>
+                            <i class="social fa fa-google-plus-square fa-5x"></i>
+                        </li>
+                    </ul>
+                </aside>
+           </div>
+        </div><footer class="footer page-footer container-fluid">
+            <div class="row">
+                <div class="col-md-6 mentions">
+                    <ul class="nav">
+                        <li class="fotter-item"><a href="#">Metions légales</a></li>
+                        <li class="fotter-item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 partenaires">
+                    <ul class="nav">
+                        <li class="fotter-item"><a href="#">Ardeche</a></li>
+                        <li class="fotter-item"><a href="#">Conseil géneral</a></li>
+                    </ul>
+                </div>
+            </div>
+        <footer/>
+
+
+
+
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=fr"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+        <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../../../public/assets/js/app.js"></script>
+    </body>
+</html>

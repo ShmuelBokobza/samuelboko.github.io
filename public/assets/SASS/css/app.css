@@ -15,9 +15,9 @@ h1 {
   font-size: 7.125em; }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 3em;
   line-height: 1.25;
-  color: #ecf0f1; }
+  color: #737373; }
 
 a {
   font-size: 2em;
@@ -74,6 +74,27 @@ header {
     color: #9b59b6; }
     .breadcrumb a:hover {
       color: #c6a0d5; }
+
+.container-block {
+  width: 70%;
+  float: left;
+  /* background-color: $blancbody; */ }
+
+.newsblock {
+  height: auto;
+  background-color: whitesmoke;
+  padding: 26px; }
+  .newsblock:h2 {
+    color: #34495e; }
+  .newsblock .bg-success {
+    width: 50%;
+    background-color: #7ee2a8;
+    padding: 5px 5px 5px 5px; }
+  .newsblock p {
+    font-size: 1.5em;
+    line-height: 1.75; }
+  .newsblock a {
+    font-size: 1.5em; }
 
 .aside {
   float: right;
