@@ -27,6 +27,12 @@ a {
     text-decoration: none;
     color: #ecf0f1; }
 
+.btn {
+  border-radius: 0px; }
+
+.col-md-9 {
+  width: 72%; }
+
 .header, .footer {
   width: 100%; }
 
@@ -76,25 +82,32 @@ header {
       color: #c6a0d5; }
 
 .container-block {
-  width: 70%;
-  float: left;
-  /* background-color: $blancbody; */ }
+  float: left; }
 
-.newsblock {
+.container-block-news {
   height: auto;
+  float: left;
   background-color: whitesmoke;
-  padding: 26px; }
-  .newsblock:h2 {
+  padding: 26px;
+  margin: 26px 26px 26px 26px; }
+  .container-block-news:h2 {
     color: #34495e; }
-  .newsblock .bg-success {
+  .container-block-news .bg-success {
     width: 50%;
     background-color: #7ee2a8;
     padding: 5px 5px 5px 5px; }
-  .newsblock p {
+  .container-block-news p {
     font-size: 1.5em;
     line-height: 1.75; }
-  .newsblock a {
-    font-size: 1.5em; }
+  .container-block-news a {
+    font-size: 1em;
+    color: #e67e22; }
+    .container-block-news a:hover {
+      background-color: #34495e;
+      color: #ecf0f1; }
+
+.col-md-5 .actu-single {
+  width: 100%; }
 
 .aside {
   float: right;
@@ -105,7 +118,8 @@ header {
   float: right;
   margin: 20px; }
   .side li {
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    list-style-type: none; }
   .side h4 {
     font-size: 2.5em; }
 
@@ -116,9 +130,15 @@ header {
     border-top-right-radius: 0px; }
 
 .badge {
-  background-color: #2ecc71; }
+  background-color: #2ecc71;
+  border-radius: 0px; }
 
-.social, .fa-twitter-square, .fa-google-plus-square {
+.social {
+  background-color: #fff;
+  width: 33%;
+  float: left; }
+
+.social-link, .fa-twitter-square, .fa-google-plus-square {
   height: auto;
   width: auto;
   color: #2980b9;

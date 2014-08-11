@@ -10,108 +10,108 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../../../bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="../../../bower_components/fontawesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../SASS/css/app.css">
+        <link rel="stylesheet" href="../../../public/assets/SASS/css/app.css">
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
-    <body>
+<body>
+<header class="header page-header container-fluid">
+    <div class="row">
+        <a href="../../../index.html" class="header-logo">
+            <img class="img-circle" src="../../../public/assets/images/logo.png" alt="Logo">
+        </a>
+        <h1 class="header-titre">Go Mobility </h1>
+            <ul class="nav nav-pills col-md-5 header-navigation" role="navigation">
+                <li><a href="../../../index.html" class="header-menu-item">Le Projet</a></li>
+                <li><a href="experiences2.html" class="header-menu-item">Vos Expériences</a></li>
+                <li><a href="participer.html" class="header-menu-item">Je Participe</a></li>
+            </ul>
+    </div>
+</header>
 
-
-
-
-        <header class="header page-header container-fluid">
-            <div class="row">
-            <a href="../../../index.html" class="header-logo">
-                <img class="img-circle" src="../../../public/assets/images/logo.png" alt="Logo">
+<div class="container-fluid container">
+    <div class="row">
+        <ul class="breadcrumb col-md-3">
+            <li><a href="../../../index.html">Accueil</a></li>
+            <li class="active"><a href="#">Actualités</a></li>
+        </ul>
+    </div>
+    <div class="row">
+    <div class="container-block col-md-9">
+       
+        <article class="container-block-news">
+            <h2 class="container-block-title">Ceçi est une news</h2>
+            <p class="bg-success">par <strong>Auteur </strong>le <em>10/07/2014</em> dans Catégorie</p>
+            <img src="../images/logo.png" alt="..." class="img-thumbnail">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation <a href="">bokook</a> ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+             <a href="actus.html">
+                <button type="button" class="btn btn-primary">
+                <span class="glyphicon glyphicon-hand-left"></span> Retour au news</button>
             </a>
-            <h1 class="header-titre">Go Mobility </h1>
-                <ul class="nav nav-pills col-md-5 header-navigation" role="navigation">
-                    <li class="active"><a href="../../../index.html" class="header-menu-item">Le Projet</a></li>
-                    <li><a href="experiences (2).html" class="header-menu-item">Vos Expériences</a></li>
-                    <li><a href="participer.html" class="header-menu-item">Je Participe</a></li>
-                </ul>
-            </div>
-        </header>
+        </article>   
+    </div>
 
-        <div class="container-fluid container">
-            <div class="row">
-        <h2>Actus</h2>
-                <ul class="breadcrumb col-md-3">
-                    <li><a href="#">Accueil</a></li>
-                </ul>
-            </div>
+    <div class="container-fluid aside col-md-3">
+        <aside class="side">
+           <ul class="list-group first-block">
+                <li class="list-group-item"><span class="badge">5831</span>Engagés </li>
+                <li class="list-group-item">Meilleurs "eco-acteur"</li>
+                <li class="list-group-item">Appli Mobile</li>
+            </ul>
+        </aside>
 
-            <div class="container-block">
-                <article class="newsblock">
-                    <h2 class="title">News 1</h2>
-                    <p class="bg-success">par <strong>Auteur </strong>le <date>10/07/2014</date> dans catÃ©gorie</p>
-                    <img src="../images/logo.png" alt="..." class="img-thumbnail">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                     <button type="button" class="btn btn-primary">Lire la suite...</button>
-                </article>
-            </div>
 
-            <div class="container-fluid aside">
-                <aside class="side">
-                   <ul class="list-group first-block">
-                        <li class="list-group-item"><span class="badge">5831</span>Engagés </li>
-                        <li class="list-group-item">Meilleurs "eco-acteur"</li>
-                        <li class="list-group-item">Appli Mobile</li>
-                    </ul>
-                </aside>
+        <aside class="side">
+            <h4>Actualité</h4>
+            <ul class="list-group">
+                <li class="list-group-item">Bienvenue à Mimi</li>
+                <li class="list-group-item">Aujourd'hui <span class="badge">31</span> nouveaux</li>
+            </ul>
+        </aside>
 
-            
-                <aside class="side">
-                    <h4>Actualité</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">Bienvenue à Mimi</li>
-                        <li class="list-group-item">Aujourd'hui <span class="badge">31</span> nouveaux</li>
-                    </ul>
-                </aside>
-            
-                <aside class="side">
-                    <h4>Nous retrouver</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <i class="social fa fa-facebook-square fa-5x"></i>
-                            <i class="social fa fa-twitter-square fa-5x"></i>
-                            <i class="social fa fa-google-plus-square fa-5x"></i>
-                        </li>
-                    </ul>
-                </aside>
-           </div>
-        </div>
+        <aside class="side">
+            <h4>Nous retrouver</h4>
+            <ul class="list-group">
+                <li class="social "><i class="social-link fa fa-facebook-square fa-5x"></i></li>
+                <li class="social "><i class="social-link fa fa-twitter-square fa-5x"></i></li>
+                <li class="social "><i class="social-link fa fa-google-plus-square fa-5x"></i></li>
+           </ul>
+        </aside>
+    </div>
+    </div>
+</div>
 
-        <footer class="footer page-footer container-fluid">
-            <div class="row">
-                <div class="col-md-6 mentions">
-                    <ul class="nav">
-                        <li class="fotter-item"><a href="#">Metions légales</a></li>
-                        <li class="fotter-item"><a href="#">Contact</a></li>
-                    </ul>
-                </div>
+<footer class="footer page-footer container-fluid">
+<div class="row">
+    <div class="col-md-6 mentions">
+        <ul class="nav">
+            <li class="fotter-item"><a href="#">Metions légales</a></li>
+            <li class="fotter-item"><a href="#">Contact</a></li>
+        </ul>
+    </div>
 
-                <div class="col-md-6 partenaires">
-                    <ul class="nav">
-                        <li class="fotter-item"><a href="#">Ardeche</a></li>
-                        <li class="fotter-item"><a href="#">Conseil géneral</a></li>
-                    </ul>
-                </div>
-            </div>
-        <footer/>
+    <div class="col-md-6 partenaires">
+        <ul class="nav">
+            <li class="fotter-item"><a href="#">Ardeche</a></li>
+            <li class="fotter-item"><a href="#">Conseil géneral</a></li>
+        </ul>
+    </div>
+</div>
+<footer/>
 
 
 
 
 
-        <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="../../../public/assets/js/app.js"></script>
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="public/assets/js/app.js"></script>
     </body>
 </html>

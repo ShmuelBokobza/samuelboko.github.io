@@ -10,37 +10,33 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../../../bower_components/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="../../../bower_components/fontawesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../SASS/css/app.css">
+        <link rel="stylesheet" href="../../../public/assets/SASS/css/app.css">
         <!--[if lt IE 9]>
             <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
-    <body>
+<body>
+<header class="header page-header container-fluid">
+    <div class="row">
+        <a href="#" class="header-logo">
+            <img class="img-circle" src="../../../public/assets/images/logo.png" alt="Logo">
+        </a>
+        <h1 class="header-titre">Go Mobility </h1>
+            <ul class="nav nav-pills col-md-5 header-navigation" role="navigation">
+                <li><a href="../../../index.html" class="header-menu-item">Le Projet</a></li>
+                <li><a href="experiences2.html" class="header-menu-item">Vos Expériences</a></li>
+                <li><a href="participer.html" class="header-menu-item">Je Participe</a></li>
+            </ul>
+    </div>
+</header>
 
-
-
-
-
-        <header class="header page-header container-fluid">
-            <div class="row">
-            <a href="../../../index.html" class="header-logo">
-                <img class="img-circle" src="../../../public/assets/images/logo.png" alt="Logo">
-            </a>
-            <h1 class="header-titre">Go Mobility </h1>
-                <ul class="nav nav-pills col-md-5 header-navigation" role="navigation">
-                    <li class="active"><a href="../../../index.html" class="header-menu-item">Le Projet</a></li>
-                    <li><a href="experiences (2).html" class="header-menu-item">Vos Expériences</a></li>
-                    <li><a href="participer.html" class="header-menu-item">Je Participe</a></li>
-                </ul>
-            </div>
-        </header>
         <div class="container-fluid container">
             <div class="row">
                 <ul class="breadcrumb col-md-3">
                     <li><a href="#">Accueil</a></li>
                 </ul>
             </div>
-                        <div class="container-block">
+            <div class="container-block">
                 <div class="newsblock">
             <h1>Mon compte</h1>
 <!-- Nav tabs -->
@@ -221,7 +217,7 @@
   })
 </script>
 
-<div class="container-fluid aside">
+            <div class="container-fluid aside">
                 <aside class="side">
                    <ul class="list-group first-block">
                         <li class="list-group-item"><span class="badge">5831</span>Engagés </li>
@@ -242,12 +238,10 @@
                 <aside class="side">
                     <h4>Nous retrouver</h4>
                     <ul class="list-group">
-                        <li class="list-group-item">
-                            <i class="social fa fa-facebook-square fa-5x"></i>
-                            <i class="social fa fa-twitter-square fa-5x"></i>
-                            <i class="social fa fa-google-plus-square fa-5x"></i>
-                        </li>
-                    </ul>
+                        <li class="social "><i class="social-link fa fa-facebook-square fa-5x"></i></li>
+                        <li class="social "><i class="social-link fa fa-twitter-square fa-5x"></i></li>
+                        <li class="social "><i class="social-link fa fa-google-plus-square fa-5x"></i></li>
+                   </ul>
                 </aside>
            </div>
         </div>
@@ -273,8 +267,10 @@
 
 
 
-        <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="../../../public/assets/js/app.js"></script>
+
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="public/assets/js/app.js"></script>
     </body>
 </html>

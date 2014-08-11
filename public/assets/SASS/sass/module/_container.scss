@@ -17,28 +17,41 @@
 }
 
 .container-block{
-	width: 70%;
 	float: left;
-	/* background-color: $blancbody; */
 }
 
-.newsblock{
+.container-block-news{
 	height: auto;
+	float: left;
 	background-color: $blancbody;
 	padding: 26px; 
+	margin: 26px 26px 26px 26px; 
 	&:h2{
 	color:$bleufonce;
-	}.bg-success{
+	}
+	.bg-success{
 		width: 50%;
 		background-color: lighten($vert, 20%);
 		padding: 5px 5px 5px 5px;
-	}p{
+	}
+	p{
 		font-size: 1.5em;
 		line-height: 1.75; 
-	}a{
-		font-size: 1.5em
+	}
+	a{
+		font-size: 1em;
+		color:$orange;
+		&:hover{
+			background-color: $bleufonce;
+			color: $blanc;
+		}
 	}
 }
+
+.col-md-5 .actu-single{
+	width: 100%;
+}
+
 .aside {
 	float: right;
 	width: 25%;
@@ -50,6 +63,7 @@
 	margin: 20px;
 	li{
 		font-size: 1.3em;
+		list-style-type:none; 
 	}
 	h4{
 		font-size:2.5em;
@@ -66,9 +80,17 @@
 
 .badge{
 	background-color: $vert;
+	border-radius: 0px;
 }
 
-.social{
+.social {
+	background-color: #fff;
+	width: 33%;
+	float: left;
+
+}
+
+.social-link{
 	height: auto;
 	width : auto;
 	color : $socialfb;
@@ -76,11 +98,11 @@
 }
 
 .fa-twitter-square{
-	@extend .social;
+	@extend .social-link;
 	color : $socialtw;
 }
 
 .fa-google-plus-square{
-	@extend .social;
+	@extend .social-link;
 	color : $socialgp;
 }

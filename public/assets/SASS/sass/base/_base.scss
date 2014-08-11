@@ -3,6 +3,7 @@ $blanc    :#ecf0f1;
 $text     :#737373;
 $vert     :#2ecc71;
 $violet   :#9b59b6;
+$orange   :#e67e22;
 
 $blancbody:#f5f5f5;
 $bleufonce:#34495e;
@@ -47,4 +48,12 @@ a {
 		color: $blanc;
 
 	}
+}
+
+.btn{
+	border-radius: 0px;
+}
+
+.col-md-9 {
+	width:72%;
 }
