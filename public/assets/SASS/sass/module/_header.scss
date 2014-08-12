@@ -1,3 +1,8 @@
+/***************************
+****************************
+			HEADER
+****************************
+***************************/
 header{
 	background-color: $bleu;
 }
@@ -22,16 +27,16 @@ header{
 .nav-pills > li > a{
 	border-radius: 0px;
 	&:hover{
-	background-color:darken($bleu, 50%);}
+	background-color:lighten($bleufonce, 30%);}
 	
 }
 
 .nav-pills>li.active>a {
-	background-color:darken($bleu, 50%);
+	background-color:lighten($bleufonce, 30%);
 	color:lighten($blanc, 10%);
 	border-radius: 0px;
 	&:hover{
-	background-color:darken($bleu, 30%);}
+	background-color:lighten($bleufonce, 30%);}
 
 }
 

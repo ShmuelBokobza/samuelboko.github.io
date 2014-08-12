@@ -1,7 +1,8 @@
-.container {
-	width: 90%;
-	height: auto;
-}
+/***************************
+****************************
+		CONTAINER
+****************************
+***************************/
 
 .breadcrumb{
 	float: left;
@@ -11,23 +12,20 @@
 		color:$violet;
 		&:hover {
 			color:lighten($violet, 20%);
-
 		}
 	}
 }
 
-.container-block{
-	float: left;
-}
-
-.container-block-news{
+/***************************
+	Elément principal du conteneur 
+***************************/
+.container-block-elem{
 	height: auto;
-	float: left;
-	background-color: $blancbody;
+	background-color: $blanc;
 	padding: 26px; 
-	margin: 26px 26px 26px 26px; 
+	margin: 0px 26px 26px 26px; 
 	&:h2{
-	color:$bleufonce;
+		color:$bleufonce;
 	}
 	.bg-success{
 		width: 50%;
@@ -48,9 +46,15 @@
 	}
 }
 
-.col-md-5 .actu-single{
-	width: 100%;
+.container-block-title {
+	color: $text;
 }
+
+/***************************
+****************************
+			ASIDE
+****************************
+***************************/
 
 .aside {
 	float: right;
@@ -63,19 +67,26 @@
 	margin: 20px;
 	li{
 		font-size: 1.3em;
+		background-color: $blanc;
 		list-style-type:none; 
 	}
 	h4{
 		font-size:2.5em;
+		cursor: default;
 	}
 }
 
 .list-group-item{
 	border:0px;
+	cursor:default;
 	&:first-child{
 		border-top-left-radius:0px;
 		border-top-right-radius:0px;
 	}
+	&:hover{
+		background-color: $bleufonce;
+		color: $blanc;
+	};
 }
 
 .badge{
@@ -95,14 +106,94 @@
 	width : auto;
 	color : $socialfb;
 	margin-left: 15px;
+	&:hover{
+		cursor:pointer;
+		color:lighten($socialfb, 20%);
+	}
 }
 
 .fa-twitter-square{
 	@extend .social-link;
 	color : $socialtw;
+	&:hover{
+		color:lighten($socialtw, 20%);
+	}
 }
 
 .fa-google-plus-square{
 	@extend .social-link;
 	color : $socialgp;
+	&:hover{
+		color:lighten($socialgp, 20%);
+	}
+}
+
+
+/***************************
+	ACTU ACTU-SINGLE
+***************************/
+.actu-single{
+	cursor:default;
+}
+
+.col-md-5 .actu-single{
+	@extend .actu-single;
+	width: 100%;
+}
+
+/***************************
+	EXPÉRIENCE
+***************************/
+.experience-badge {
+	font-size: 2em;
+	float: right;
+	background-color: $bleufonce;
+	cursor: default;
+}
+
+.experience-type {
+	margin-bottom: 0px;
+	
+}
+
+.experience-carte {
+	height: 26%;
+	margin: 8px 8px 8px 8px;
+	border: 0px;
+}
+
+.panel {
+		border-radius: 0px;
+		border-color: $text;
+}
+
+/***************************
+	EXPÉRIENCES
+***************************/
+
+.experience-single{
+	.bg-success {
+		width: 100%;
+	}
+	.experience-badge {
+		font-size: 1em;
+	}
+}
+
+/***************************
+	MON COMPTE
+***************************/
+.compte .nav-pills>li{
+	background-color:$bleufonce;
+		&:first-child{	
+			margin-left: 25px;
+		};
+		
+}
+
+.compte .nav-pills>li.active>a {
+	background-color:lighten($bleufonce, 20%);
+	color: $blancbody;
+	border-radius: 0px;
+
 }

@@ -18,7 +18,7 @@
 <body>
 <header class="header page-header container-fluid">
     <div class="row">
-        <a href="#" class="header-logo">
+        <a href="../../../index.html" class="header-logo">
             <img class="img-circle" src="../../../public/assets/images/logo.png" alt="Logo">
         </a>
         <h1 class="header-titre">Go Mobility </h1>
@@ -30,138 +30,111 @@
     </div>
 </header>
 
-        <div class="container-fluid container">
-            <div class="row">
-                <ul class="breadcrumb col-md-3">
-                    <li><a href="#">Accueil</a></li>
-                </ul>
+<div class="container-fluid container">
+    <div class="row">
+        <ul class="breadcrumb col-md-3">
+            <li><a href="../../../index.html">Accueil</a></li>
+            <li class="active"><a href="#">Actualités</a></li>
+        </ul>
+    </div>
+    <div class="row">
+    <div class="container-block col-md-9">
+         <h2>Publiez votre trajet</h2>
+         
+
+          <form role="form">
+          <h3>Trajet</h3>
+              <div class="form-group">
+                <input type="text" class="form-control" name="depart" placeholder="Adresse départ">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="arrive" placeholder="Adresse arrivé">
+              </div>
+          <h3>Transport</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Vélo 
+                </label>
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> A pied 
+                </label>
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> En roller 
+                </label>
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> En voiture 
+                </label>
             </div>
-            
-            <h1>Publiez votre trajet !</h1>
-<form role="form">
-<h2>Trajet</h2>
-  <div class="form-group">
-    <label for="DepartTrajet">Départ :*</label>
-    <input class="form-control" id="DepartTrajet" placeholder="D'ou êtes vous parti(e) ?">
-  </div>
-  <div class="form-group">
-    <label for="DestinationTrajet">Arrivée :*</label>
-    <input class="form-control" id="DestinationTrajet" placeholder="Ou êtes vous allé(e) ?">
-  </div>
+          <h3>Votre trajet est de type :</h3>
+            <div class="radio">
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Touristique 
+                </label>
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Sportif 
+                </label>
+              <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> Go To Work 
+                </label>
+            </div>
+          <h3>Expérience</h3>
+            <label for="DescriptionTrajet">Comment votre trajet s'est-il déroulé ?</label><br/>
+            <textarea class="form-control" rows="5"></textarea>
+          <div class="checkbox">
+              <input type="checkbox"> Je souhaite recevoir la newsletter du site
+          </div>
+              <button type="submit" class="btn btn-info"> <span class="glyphicon glyphicon-upload"></span> Publier trajet</button>
+            </form>
+ 
+    </div>
 
-<h2>Transport</h2>
+        <div class="container-fluid aside col-md-3">
+            <aside class="side">
+               <ul class="list-group first-block">
+                    <li class="list-group-item"><span class="badge">5831</span>Engagés </li>
+                    <li class="list-group-item">Meilleurs "eco-acteur"</li>
+                    <li class="list-group-item">Appli Mobile</li>
+                </ul>
+            </aside>
 
-<div class="radio">
-  <label>
-    <input type="radio" name="transportTrajet" id="optionsTrajet1" value="à pied" checked>
-    à pied
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="transportTrajet" id="optionsTrajet2" value="à vélo">
-    à vélo
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="transportTrajet" id="optionsTrajet3" value="en transport en commun">
-    en transport en commun
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="transportTrajet" id="optionsTrajet4" value="en roller">
-    en roller
-  </label>
+
+            <aside class="side">
+                <h4>Actualité</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">Bienvenue à Mimi</li>
+                    <li class="list-group-item">Aujourd'hui <span class="badge">31</span> nouveaux</li>
+                </ul>
+            </aside>
+
+            <aside class="side">
+                <h4>Nous retrouver</h4>
+                <ul class="list-group">
+                    <li class="social "><i class="social-link fa fa-facebook-square fa-5x"></i></li>
+                    <li class="social "><i class="social-link fa fa-twitter-square fa-5x"></i></li>
+                    <li class="social "><i class="social-link fa fa-google-plus-square fa-5x"></i></li>
+               </ul>
+            </aside>
+        </div>
+    </div>
 </div>
 
-<h2>Votre trajet est de type :</h2>
-<div class="radio">
-  <label>
-    <input type="radio" name="typeTrajet" id="typeTrajet1" value="touristique" checked>
-    Touristique
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="typeTrajet" id="typeTrajet2" value="sportif">
-    Sportif
-  </label>
-</div>
-<div class="radio">
-  <label>
-    <input type="radio" name="typeTrajet" id="typeTrajet3" value="go to work">
-    go to work
-  </label>
-</div>
-  
-
-  <h2>Expérience</h2>
-  <div class="form-group">
-  	<label for="DescriptionTrajet">Comment votre trajet s'est-il déroulé ?</label><br/>
-  	<textarea id="DescriptionTrajet" class="form-control" rows="3"></textarea>
-  </div>
-
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Je souhaite participer au Jeu Concours !
-    </label>
-  </div>
-  <button type="submit" class="btn btn-success">Je publie mon trajet !</button>
-  <p class="help-block">Les champs marqués de (*) sont obligatoires.</p>
-</form>
-            <div class="container-fluid aside">
-                <aside class="side">
-                   <ul class="list-group first-block">
-                        <li class="list-group-item"><span class="badge">5831</span>Engagés </li>
-                        <li class="list-group-item">Meilleurs "eco-acteur"</li>
-                        <li class="list-group-item">Appli Mobile</li>
-                    </ul>
-                </aside>
-
-            
-                <aside class="side">
-                    <h4>Actualité</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">Bienvenue à Mimi</li>
-                        <li class="list-group-item">Aujourd'hui <span class="badge">31</span> nouveaux</li>
-                    </ul>
-                </aside>
-            
-                <aside class="side">
-                    <h4>Nous retrouver</h4>
-                    <ul class="list-group">
-                        <li class="social "><i class="social-link fa fa-facebook-square fa-5x"></i></li>
-                        <li class="social "><i class="social-link fa fa-twitter-square fa-5x"></i></li>
-                        <li class="social "><i class="social-link fa fa-google-plus-square fa-5x"></i></li>
-                   </ul>
-                </aside>
-           </div>
+<footer class="footer page-footer container-fluid">
+    <div class="row">
+        <div class="col-md-6 footer-mentions">
+            <ul class="nav">
+                <li class="fotter-item"><a href="#">Metions légales</a></li>
+                <li class="fotter-item"><a href="#">Contact</a></li>
+            </ul>
         </div>
 
-        <footer class="footer page-footer container-fluid">
-            <div class="row">
-                <div class="col-md-6 mentions">
-                    <ul class="nav">
-                        <li class="fotter-item"><a href="#">Metions légales</a></li>
-                        <li class="fotter-item"><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-6 partenaires">
-                    <ul class="nav">
-                        <li class="fotter-item"><a href="#">Ardeche</a></li>
-                        <li class="fotter-item"><a href="#">Conseil géneral</a></li>
-                    </ul>
-                </div>
-            </div>
-        <footer/>
-
-
-
-
-
+        <div class="col-md-6 footer-partenaires">
+            <ul class="nav">
+                <li class="fotter-item"><a href="#">Ardeche</a></li>
+                <li class="fotter-item"><a href="#">Conseil géneral</a></li>
+            </ul>
+        </div>
+    </div>
+<footer/>
 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

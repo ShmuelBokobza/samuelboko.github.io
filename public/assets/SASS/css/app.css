@@ -1,8 +1,15 @@
+@charset "UTF-8";
+/***************************
+		Couleurs 
+***************************/
+/***************************
+		Fin Couleurs 
+***************************/
 html {
-  background-color: #ecf0f1; }
+  background-color: white; }
 
 body {
-  background-color: #ecf0f1;
+  background-color: white;
   width: 100%;
   margin: 0 auto;
   margin-top: -40px;
@@ -11,31 +18,68 @@ body {
   font-size: 1em;
   color: #737373; }
 
+/***************************
+	Base des titres 
+***************************/
 h1 {
   font-size: 7.125em; }
 
 h2 {
   font-size: 3em;
   line-height: 1.25;
-  color: #737373; }
+  color: #737373;
+  cursor: default; }
+  h2:hover {
+    color: #8d8d8d; }
 
+/***************************
+	Base des liens 
+***************************/
 a {
   font-size: 2em;
-  color: #ecf0f1;
+  color: white;
   text-decoration: none; }
   a:hover {
     text-decoration: none;
     color: #ecf0f1; }
 
+/***************************
+	Base des boutons 
+***************************/
 .btn {
-  border-radius: 0px; }
+  border-radius: 0px;
+  float: right; }
 
+textarea {
+  margin-bottom: 12px; }
+
+/***************************
+	Base du bloc container 
+***************************/
+.container {
+  height: auto; }
+  .container .container-block {
+    float: left; }
+
+/***************************
+****************************
+		GRILLE
+****************************
+***************************/
+/***************************
+		Taille du container
+***************************/
 .col-md-9 {
   width: 72%; }
 
 .header, .footer {
   width: 100%; }
 
+/***************************
+****************************
+			HEADER
+****************************
+***************************/
 header {
   background-color: #7ed2ec; }
 
@@ -56,22 +100,23 @@ header {
 .nav-pills > li > a {
   border-radius: 0px; }
   .nav-pills > li > a:hover {
-    background-color: #0e4a5d; }
+    background-color: #7795b4; }
 
 .nav-pills > li.active > a {
-  background-color: #0e4a5d;
+  background-color: #7795b4;
   color: white;
   border-radius: 0px; }
   .nav-pills > li.active > a:hover {
-    background-color: #1b91b6; }
+    background-color: #7795b4; }
 
 .page-header {
   padding-bottom: 0px; }
 
-.container {
-  width: 90%;
-  height: auto; }
-
+/***************************
+****************************
+		CONTAINER
+****************************
+***************************/
 .breadcrumb {
   float: left; }
   .breadcrumb a {
@@ -81,34 +126,38 @@ header {
     .breadcrumb a:hover {
       color: #c6a0d5; }
 
-.container-block {
-  float: left; }
-
-.container-block-news {
+/***************************
+	Elément principal du conteneur 
+***************************/
+.container-block-elem {
   height: auto;
-  float: left;
-  background-color: whitesmoke;
+  background-color: #ecf0f1;
   padding: 26px;
-  margin: 26px 26px 26px 26px; }
-  .container-block-news:h2 {
+  margin: 0px 26px 26px 26px; }
+  .container-block-elem:h2 {
     color: #34495e; }
-  .container-block-news .bg-success {
+  .container-block-elem .bg-success {
     width: 50%;
     background-color: #7ee2a8;
     padding: 5px 5px 5px 5px; }
-  .container-block-news p {
+  .container-block-elem p {
     font-size: 1.5em;
     line-height: 1.75; }
-  .container-block-news a {
+  .container-block-elem a {
     font-size: 1em;
     color: #e67e22; }
-    .container-block-news a:hover {
+    .container-block-elem a:hover {
       background-color: #34495e;
       color: #ecf0f1; }
 
-.col-md-5 .actu-single {
-  width: 100%; }
+.container-block-title {
+  color: #737373; }
 
+/***************************
+****************************
+			ASIDE
+****************************
+***************************/
 .aside {
   float: right;
   width: 25%; }
@@ -119,15 +168,21 @@ header {
   margin: 20px; }
   .side li {
     font-size: 1.3em;
+    background-color: #ecf0f1;
     list-style-type: none; }
   .side h4 {
-    font-size: 2.5em; }
+    font-size: 2.5em;
+    cursor: default; }
 
 .list-group-item {
-  border: 0px; }
+  border: 0px;
+  cursor: default; }
   .list-group-item:first-child {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px; }
+  .list-group-item:hover {
+    background-color: #34495e;
+    color: #ecf0f1; }
 
 .badge {
   background-color: #2ecc71;
@@ -143,23 +198,88 @@ header {
   width: auto;
   color: #2980b9;
   margin-left: 15px; }
+  .social-link:hover, .fa-twitter-square:hover, .fa-google-plus-square:hover {
+    cursor: pointer;
+    color: #6ab0de; }
 
 .fa-twitter-square {
   color: #3498db; }
+  .fa-twitter-square:hover {
+    color: #8bc4ea; }
 
 .fa-google-plus-square {
   color: #e74c3c; }
+  .fa-google-plus-square:hover {
+    color: #f29f97; }
 
+/***************************
+	ACTU ACTU-SINGLE
+***************************/
+.actu-single, .col-md-5 .actu-single {
+  cursor: default; }
+
+.col-md-5 .actu-single {
+  width: 100%; }
+
+/***************************
+	EXPÉRIENCE
+***************************/
+.experience-badge {
+  font-size: 2em;
+  float: right;
+  background-color: #34495e;
+  cursor: default; }
+
+.experience-type {
+  margin-bottom: 0px; }
+
+.experience-carte {
+  height: 26%;
+  margin: 8px 8px 8px 8px;
+  border: 0px; }
+
+.panel {
+  border-radius: 0px;
+  border-color: #737373; }
+
+/***************************
+	EXPÉRIENCES
+***************************/
+.experience-single .bg-success {
+  width: 100%; }
+.experience-single .experience-badge {
+  font-size: 1em; }
+
+/***************************
+	MON COMPTE
+***************************/
+.compte .nav-pills > li {
+  background-color: #34495e; }
+  .compte .nav-pills > li:first-child {
+    margin-left: 25px; }
+
+.compte .nav-pills > li.active > a {
+  background-color: #587ca0;
+  color: white;
+  border-radius: 0px; }
+
+/***************************
+****************************
+		FOOTER
+****************************
+***************************/
 footer {
   background-color: #7ed2ec; }
 
-.mentions, .partenaires {
+.footer-mentions, .footer-partenaires {
   float: left;
   padding-left: 75px; }
-  .mentions a, .partenaires a {
+  .footer-mentions a, .footer-partenaires a {
     font-size: 1.5em;
     color: #ecf0f1;
     float: left; }
+    .footer-mentions a:hover, .footer-partenaires a:hover {
+      color: #34495e; }
 
-.partenaires {
+.footer-partenaires {
   float: right; }

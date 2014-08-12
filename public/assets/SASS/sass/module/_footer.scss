@@ -1,18 +1,26 @@
+/***************************
+****************************
+		FOOTER
+****************************
+***************************/
 footer{
 	background-color:$bleu;
 }
 
-.mentions {
+.footer-mentions {
 	float: left;
 	padding-left: 75px;
 	a {
 		font-size: 1.5em;
 		color:$blanc;
 		float: left;
+		&:hover{
+		color:$bleufonce;
+		}
 	}
 }
 
-.partenaires {
-	@extend .mentions;
+.footer-partenaires {
+	@extend .footer-mentions;
 	float: right;
 }
