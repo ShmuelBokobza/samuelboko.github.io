@@ -16,15 +16,30 @@
         <![endif]-->
     </head>
 <body>
+
 <header class="header page-header container-fluid">
-    <div class="row">
+<div class="row">
+    <div class="dropdown col-md-1"></div>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            Rejoignez-nous
+        <span class="caret"></span>
+        </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="connexion.html">Connexion</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="inscription.html">Inscription</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Paramètre</a></li>
+            </ul>
+    </div>
         <a href="../../../index.html" class="header-logo">
-            <img class="img-circle" src="../../../public/assets/images/logo.png" alt="Logo">
+            <img class="img-circle" src="../images/logo.png" alt="Logo">
         </a>
         <h1 class="header-titre">Go Mobility </h1>
+
             <ul class="nav nav-pills col-md-5 header-navigation" role="navigation">
                 <li><a href="../../../index.html" class="header-menu-item">Le Projet</a></li>
-                <li><a href="experiences2.html" class="header-menu-item">Vos Expériences</a></li>
+                <li><a href="experiences.html" class="header-menu-item">Vos Expériences</a></li>
                 <li><a href="participer.html" class="header-menu-item">Je Participe</a></li>
             </ul>
     </div>
@@ -34,7 +49,7 @@
     <div class="row">
         <ul class="breadcrumb col-md-3">
             <li><a href="../../../index.html">Accueil</a></li>
-            <li class="active"><a href="#">Actualités</a></li>
+            <li class="active"><a href="#">Mon Compte</a></li>
         </ul>
     </div>
     <div class="row">
@@ -90,7 +105,7 @@
             </article>     
     </div>
 
-        <div class="container-fluid aside col-md-3">
+       <div class="container-fluid aside col-md-3">
             <aside class="side">
                <ul class="list-group first-block">
                     <li class="list-group-item"><span class="badge">5831</span>Engagés </li>
@@ -101,7 +116,7 @@
 
 
             <aside class="side">
-                <h4>Actualité</h4>
+            <a href="actus.html"><h2 class="aside-title">Actualité</h2></a> 
                 <ul class="list-group">
                     <li class="list-group-item">Bienvenue à Mimi</li>
                     <li class="list-group-item">Aujourd'hui <span class="badge">31</span> nouveaux</li>
@@ -109,7 +124,7 @@
             </aside>
 
             <aside class="side">
-                <h4>Nous retrouver</h4>
+            <a href="#"><h2 class="aside-title">Nous Retrouver</h2></a> 
                 <ul class="list-group">
                     <li class="social "><i class="social-link fa fa-facebook-square fa-5x"></i></li>
                     <li class="social "><i class="social-link fa fa-twitter-square fa-5x"></i></li>
@@ -125,7 +140,7 @@
         <div class="col-md-6 footer-mentions">
             <ul class="nav">
                 <li class="fotter-item"><a href="#">Metions légales</a></li>
-                <li class="fotter-item"><a href="#">Contact</a></li>
+                <li class="fotter-item"><a href="contact.html">Contact</a></li>
             </ul>
         </div>
 
@@ -138,8 +153,8 @@
     </div>
 <footer/>
 
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="public/assets/js/app.js"></script>
+        <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../js/app.js"></script>
     </body>
 </html>

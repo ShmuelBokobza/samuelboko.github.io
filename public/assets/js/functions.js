@@ -33,6 +33,8 @@ initialize = function(){
 
 };
 
+alert(initialize);
+
 calculate = function(){
     origin      = document.getElementById('origin').value; // Le point départ
     destination = document.getElementById('destination').value; // Le point d'arrivée

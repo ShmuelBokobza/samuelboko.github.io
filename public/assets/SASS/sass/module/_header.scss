@@ -25,9 +25,9 @@ header{
 
 }
 .nav-pills > li > a{
-	border-radius: 0px;
+	border-radius: 0px;background-color:lighten($bleufonce, 30%);
 	&:hover{
-	background-color:lighten($bleufonce, 30%);}
+	background-color:lighten($bleufonce, 50%);}
 	
 }
 
@@ -43,4 +43,22 @@ header{
 
 .page-header {
 	padding-bottom: 0px;
+}
+
+
+.dropdown{
+	float: right;
+	margin:26px 0px 0px 0px;
+}
+.dropdown-menu {
+	width:20%;
+	top:32px;
+	right:3px;
+	font-size:1em;
+	float:right;
+
+}
+
+.dropdown-menu >li{
+	font-size: 0.8em;
 }

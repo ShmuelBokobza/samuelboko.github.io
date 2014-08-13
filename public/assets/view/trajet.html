@@ -17,216 +17,179 @@
     </head>
 <body>
 <header class="header page-header container-fluid">
-    <div class="row">
-        <a href="#" class="header-logo">
-            <img class="img-circle" src="../../../public/assets/images/logo.png" alt="Logo">
+<div class="row">
+    <div class="dropdown col-md-1"></div>
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            Rejoignez-nous
+        <span class="caret"></span>
+        </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="connexion.html">Connexion</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="inscription.html">Inscription</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Paramètre</a></li>
+            </ul>
+    </div>
+        <a href="../../../index.html" class="header-logo">
+            <img class="img-circle" src="../images/logo.png" alt="Logo">
         </a>
         <h1 class="header-titre">Go Mobility </h1>
+
             <ul class="nav nav-pills col-md-5 header-navigation" role="navigation">
                 <li><a href="../../../index.html" class="header-menu-item">Le Projet</a></li>
-                <li><a href="experiences2.html" class="header-menu-item">Vos Expériences</a></li>
+                <li><a href="experiences.html" class="header-menu-item">Vos Expériences</a></li>
                 <li><a href="participer.html" class="header-menu-item">Je Participe</a></li>
             </ul>
     </div>
 </header>
 
-        <div class="container-fluid container">
-            <div class="row">
-                <ul class="breadcrumb col-md-3">
-                    <li><a href="#">Accueil</a></li>
-                </ul>
-            </div>
-            <!-- BLOC PARCOURS -->
-  <!-- titre-->
-  <div class="titleblock">
-    <h1 class="title">[DEPART] - [DESTINATION] [TransportTrajet]</h1>
-    <small>par <a href="#">Auteur</a> le 10/07/2014</small>
-    <div class="infos-parcours">
-      Parcours touristique <a href="#"><span class="info">FACILE</span></a>
-  <!--Stars-->
-      <div style="star-block">
-        <input id="input-21e"  type="number" class="rating" min=0 max=5 step=1 data-size="xs" readonly="true" showClear="false" value="2">
-      </div>
+
+
+  <div class="container-fluid container">
+    <div class="row">
+        <ul class="breadcrumb col-md-3">
+            <li><a href="../../../index.html">Accueil</a></li>
+            <li class="active"><a href="#">Participer</a></li>
+        </ul>
     </div>
-  </div>
+    <div class="row">
+    <div class="container-block col-md-9">
 
-    <!--map-->
-    <div id="container">
-        <div id="map">
-            <p>Chargement de la carte...</p>
-        </div>
-    </div>
-
-    <!-- formulaire départ/destination/mode de transport -->
-    <!--Qui sera ensuite rempli en input hidden pour générer la carte-->
-
-    <div id="destinationForm">
-     <form action="" method="get" name="direction" id="direction">
-         <label>Point de départ :</label>
-         <input type="text" name="origin" id="origin">
-         <label>Destination :</label>
-         <input type="text" name="destination" id="destination">
-         <label>Moyen de transport</label>
-         <select name="transport" id="transport" class="form-control">
-              <option  value="WALKING">à pied</option>
-              <option value="BICYCLING" >en vélo</option>
-              <option value="TRANSIT">en transports en commun</option>
-              <option value="DRIVING">en covoiturage</option>
-        </select>
-         <input type="button" value="Calculer l'itinéraire" onclick="javascript:calculate()">
-     </form>
- 
- </div>
-
- <!-- Button Détail du parcours -->
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Détails du parcours
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">[depart]-[destination] - [mode]</h4>
-      </div>
-      <div class="modal-body">
-        <div id="panel"></div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <a href="javascript:window.print()">
-        <button type="button" class="btn btn-primary">Imprimer</button>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--infos-->  
-  <div class="table-responsive">
-      <table class="table info">
-        <tr>
-          <td><span class="temps">1h 21m 43s</span></td>
-          <td><span class="kcal">150 Kcal</span></td>
-        </tr>
-        <tr>
-          <td><span class="km">15,7 Km</span></td>
-          <td><span class="co2">150 gCo2</span></td>
-        </tr>
-      </table>
-  </div>
-  <!--description-->
-  <div class="full-text">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-
-<!--Bloc AUTEUR--> 
-
-  <div class="author">
-    <div class="media">
-      <a class="pull-left" href="#">
-        <img class="media-object img-circle" src="http://csimg.webmarchand.com/srv/FR/28018519170650/T/140x140/C/FFFFFF/url/perruque-blonde-courte-homme.jpg" alt="...">
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading">User Name</h4>
-        <p>Description de l'utilisateur</p>
-        <a href="#">Voir tous les parcours de Auteur</a>
-      </div>
-    </div>
-  </div>
-
-<!--Bloc COMMENTAIRES-->
-
-<h2>Derniers avis</h2>
-  <div class="comments">
-    <div class="media">
-      <a class="pull-left" href="#">
-        <img class="media-object img-circle" src="http://media-cache-ec0.pinimg.com/avatars/unblogunefille_1401466398_140.jpg" alt="...">
-       <span>Jojo</span>
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading">Super parcours !</h4>
-        Vraiment top le parcours c'était trop bien !
-      </div>
-    </div>
-
-    <div class="media">
-      <a class="pull-left" href="#">
-        <img class="media-object img-circle" src="http://images.critictoo.com/wp-content/uploads/2008/09/smg.jpg" alt="...">
-       <span> Maya l'abeille</span>
-      </a>
-      <div class="media-body">
-        <h4 class="media-heading">Pas mal...</h4>
-        J'ai mieux ....
-      </div>
-    </div>
-  </div>
-
-<!--Bloc FORMULAIRE COMMENTAIRES-->
-
-<!--Si l'utilisateur est connecté -->
-<h2>Donnez votre avis !</h2>
-  <div class="form-comments">
-    <div class="media">
-        <a class="pull-left" href="#">
-          <img class="media-object img-circle" src="http://images.critictoo.com/wp-content/uploads/2008/09/smg.jpg" alt="...">
-          <span>Maya l'abeille</span>
-        </a>
-       <div class="media-body">
-            <form role="form">
-                <br>
-                <input id="input-21e" value="0" type="number" class="rating" min=0 max=5 step=1 data-size="xs" >
-                <br>
-                <textarea class="form-control" id="commentaire" rows="3"></textarea>
-                <button type="button" class="btn btn-success">Donner mon avis !</button>
+       <section class="container-block-elem">
+            <a href="#"><h2 class="container-block-title">[DEPART] - [DESTINATION] [TransportTrajet]</h2></a>
+              <div class="media experience bg-success">
+                <a class="pull-left" href="#">
+                  <img class="media-object" src="http://lorempixel.com/64/64/sports/" alt="...">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading"><strong>Auteur </strong></h4>
+                  <p>le <em>10/07/2014 </em>Lorem ipsum dolor s cupiditate unde eveniet soluta. Iste quia vel architecto, sit.</p>
+                </div>
               </div>
-            </form>
-          </div>
-    </div>
-  </div>
-<!--Si l'utilisateur n'est pas connecté -->
-  <button type="button" class="btn btn-primary">Connectez-vous pour donner votre avis sur ce trajet !</button>
-            <div class="container-fluid aside">
-                <aside class="side">
-                   <ul class="list-group first-block">
-                        <li class="list-group-item"><span class="badge">5831</span>Engagés </li>
-                        <li class="list-group-item">Meilleurs "eco-acteur"</li>
-                        <li class="list-group-item">Appli Mobile</li>
-                    </ul>
-                </aside>
+            <div class="experience-carte">
+                <iframe class="experience-carte experiencesList"src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d41990.949205168195!2d2.3191352107576217!3d48.86899631254911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e2!4m5!1s0x47e66e705b049835%3A0x6f6e6094d0d9258!2sLa+Chapelle!3m2!1d48.884409!2d2.36029!4m5!1s0x47e671de2c502319%3A0x32a2024530404ed1!2sParis!3m2!1d48.8534809!2d2.3437474!5e0!3m2!1sfr!2sfr!4v1407164475804" width="100%">        
+                </iframe>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation <a href="">bokook</a> ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="panel panel-default">
+                <p class="experience-type panel-body">
+                    Parcours touristique
+                    <span class="experience-badge badge">FACILE</span>
+                </p>
+            </div>
+            <table class="table table-hover">
+              <tr>
+                <td><span class="badge">1h 21m 43s</span></td>
+                <td><span class="badge">150 Kcal</span></td>
+             </tr>
+             <tr>
+                <td><span class="badge">15,7 Km</span></td>
+                <td><span class="badge">108 gCo2</span></td>
+             </tr>  
+            </table>
+        </section>
 
-            
-                <aside class="side">
-                    <h4>Actualité</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">Bienvenue à Mimi</li>
-                        <li class="list-group-item">Aujourd'hui <span class="badge">31</span> nouveaux</li>
-                    </ul>
-                </aside>
-            
-                <aside class="side">
-                    <h4>Nous retrouver</h4>
-                    <ul class="list-group">
-                        <li class="social "><i class="social-link fa fa-facebook-square fa-5x"></i></li>
-                        <li class="social "><i class="social-link fa fa-twitter-square fa-5x"></i></li>
-                        <li class="social "><i class="social-link fa fa-google-plus-square fa-5x"></i></li>
-                   </ul>
-                </aside>
-           </div>
+         <h2>Derniers avis</h2>
+        <div class="container-block-elem">
+           <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="http://lorempixel.com/64/64/city/" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus alias laboriosam reiciendis corporis neque quo, error cum eos libero, soluta vero numquam harum molestias consequuntur! Voluptas exercitationem, veritatis qui quia.</p>
+           <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="http://lorempixel.com/64/64/city/" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus alias laboriosam reiciendis corporis neque quo, error cum eos libero, soluta vero numquam harum molestias consequuntur! Voluptas exercitationem, veritatis qui quia.</p>
+              </div>
+           <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="http://lorempixel.com/64/64/city/" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus alias laboriosam reiciendis corporis neque quo, error cum eos libero, soluta vero numquam harum molestias consequuntur! Voluptas exercitationem, veritatis qui quia.</p>
+              </div>
+            </div>
+            </div>
+              </div>
+          </div>
+           <div class="media">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="http://lorempixel.com/64/64/city/" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus alias laboriosam reiciendis corporis neque quo, error cum eos libero, soluta vero numquam harum molestias consequuntur! Voluptas exercitationem, veritatis qui quia.</p>
+              </div>
+          </div>
+
         </div>
+
+      <h2>Donner votre avis</h2>
+      <div class="container-block-elem">
+
+            <form role="form">
+                 <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="Veuillez saisir votre email">
+                </div>
+                    <textarea class="form-control" rows="5" placeholder="Votre message"></textarea>
+                <button type="submit" class="btn btn-info"> <span class="glyphicon glyphicon-ok"></span> Envoyer</button>
+            </form>
+
+      </div>
+
+    </div>
+
+        <div class="container-fluid aside col-md-3">
+            <aside class="side">
+               <ul class="list-group first-block">
+                    <li class="list-group-item"><span class="badge">5831</span>Engagés </li>
+                    <li class="list-group-item">Meilleurs "eco-acteur"</li>
+                    <li class="list-group-item">Appli Mobile</li>
+                </ul>
+            </aside>
+
+
+            <aside class="side">
+            <a href="actus.html"><h2 class="aside-title">Actualité</h2></a> 
+                <ul class="list-group">
+                    <li class="list-group-item">Bienvenue à Mimi</li>
+                    <li class="list-group-item">Aujourd'hui <span class="badge">31</span> nouveaux</li>
+                </ul>
+            </aside>
+
+            <aside class="side">
+            <a href="#"><h2 class="aside-title">Nous Retrouver</h2></a> 
+                <ul class="list-group">
+                    <li class="social "><i class="social-link fa fa-facebook-square fa-5x"></i></li>
+                    <li class="social "><i class="social-link fa fa-twitter-square fa-5x"></i></li>
+                    <li class="social "><i class="social-link fa fa-google-plus-square fa-5x"></i></li>
+               </ul>
+            </aside>
+        </div>
+  </div>
 
         <footer class="footer page-footer container-fluid">
             <div class="row">
-                <div class="col-md-6 mentions">
+                <div class="col-md-6 footer-mentions">
                     <ul class="nav">
-                        <li class="fotter-item"><a href="#">Metions légales</a></li>
-                        <li class="fotter-item"><a href="#">Contact</a></li>
+                        <li class="fotter-item"><a href="#">Mentions légales</a></li>
+                        <li class="fotter-item"><a href="public/assets/view/contact.html">Contact</a></li>
                     </ul>
                 </div>
 
-                <div class="col-md-6 partenaires">
+                <div class="col-md-6 footer-partenaires">
                     <ul class="nav">
                         <li class="fotter-item"><a href="#">Ardeche</a></li>
                         <li class="fotter-item"><a href="#">Conseil géneral</a></li>
@@ -238,10 +201,8 @@
 
 
 
-
-
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="public/assets/js/app.js"></script>
+        <script src="../../../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../js/app.js"></script>
     </body>
 </html>

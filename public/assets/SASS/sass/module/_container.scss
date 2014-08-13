@@ -47,6 +47,7 @@
 }
 
 .container-block-title {
+	cursor: pointer;
 	color: $text;
 }
 
@@ -59,6 +60,12 @@
 .aside {
 	float: right;
 	width: 25%;
+}
+
+.aside-title {
+	@extend .container-block-title;
+	font-size: 1.4em;
+	
 }
 
 .side{
@@ -77,11 +84,13 @@
 }
 
 .list-group-item{
-	border:0px;
 	cursor:default;
 	&:first-child{
 		border-top-left-radius:0px;
 		border-top-right-radius:0px;
+	}&:last-child{
+		border-bottom-left-radius:0px;
+		border-bottom-right-radius:0px;
 	}
 	&:hover{
 		background-color: $bleufonce;
@@ -196,4 +205,17 @@
 	color: $blancbody;
 	border-radius: 0px;
 
+}
+
+/***************************
+		TRAJET
+***************************/
+
+table {
+	text-align: center;
+}
+
+table .badge {
+	background-color:$socialfb;
+	font-size: 1.8em;
 }
