@@ -56,10 +56,8 @@ textarea {
 /***************************
 	Base du bloc container 
 ***************************/
-.container {
-  height: auto; }
-  .container .container-block {
-    float: left; }
+.container .container-block {
+  float: left; }
 
 /***************************
 ****************************
@@ -91,8 +89,7 @@ header {
   float: right; }
 
 .header-titre {
-  color: #ecf0f1;
-  margin-top: 52px; }
+  color: #ecf0f1; }
 
 .header-navigation {
   float: right; }
@@ -147,7 +144,7 @@ header {
 .container-block-elem {
   height: auto;
   background-color: #ecf0f1;
-  padding: 26px;
+  padding: 26px 8px 26px 26px;
   margin: 0px 26px 26px 26px; }
   .container-block-elem:h2 {
     color: #34495e; }
@@ -159,7 +156,7 @@ header {
     font-size: 1.5em;
     line-height: 1.75; }
   .container-block-elem a {
-    font-size: 1em;
+    font-size: 1.12em;
     color: #e67e22; }
     .container-block-elem a:hover {
       background-color: #34495e;

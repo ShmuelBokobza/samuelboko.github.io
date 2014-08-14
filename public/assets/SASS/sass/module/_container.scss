@@ -22,7 +22,7 @@
 .container-block-elem{
 	height: auto;
 	background-color: $blanc;
-	padding: 26px; 
+	padding: 26px 8px 26px 26px; 
 	margin: 0px 26px 26px 26px; 
 	&:h2{
 		color:$bleufonce;
@@ -37,7 +37,7 @@
 		line-height: 1.75; 
 	}
 	a{
-		font-size: 1em;
+		font-size: 1.12em;
 		color:$orange;
 		&:hover{
 			background-color: $bleufonce;

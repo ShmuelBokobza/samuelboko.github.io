@@ -16,9 +16,9 @@
         <![endif]-->
     </head>
 <body>
-<header class="header page-header container-fluid">
+<header class="header page-header container-fluid" id="header">
     <div class="dropdown col-md-1"></div>
-    <div class="dropdown">
+    <div class="dropdown header-login">
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
             Rejoignez-nous
         <span class="caret"></span>
@@ -40,7 +40,6 @@
                 <li><a href="public/assets/view/experiences.html" class="header-menu-item">Vos Expériences</a></li>
                 <li><a href="public/assets/view/participer.html" class="header-menu-item">Je Participe</a></li>
             </ul>
-    </div>
 </header>
 
         <div class="container-fluid container">
@@ -79,7 +78,7 @@
         </article>
     </div>
 
-    <div class="container-fluid aside col-md-3">
+    <div class="container-fluid aside col-md-3" id="aside">
             <aside class="side">
                <ul class="list-group first-block">
                     <li class="list-group-item"><span class="badge">5831</span>Engagés </li>
@@ -131,6 +130,8 @@
 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="bower_components/velocity/jquery.velocity.min.js"></script>
+        <script src="bower_components/velocity/velocity.ui.min.js"></script>
         <script src="public/assets/js/app.js"></script>
     </body>
 </html>
