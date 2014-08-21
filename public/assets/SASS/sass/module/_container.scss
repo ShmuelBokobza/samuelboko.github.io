@@ -9,9 +9,9 @@
 	a {
 		font-size: 1.5em;
 		font-weight:bold ;
-		color:$violet;
+		color:$orange;
 		&:hover {
-			color:lighten($violet, 20%);
+			color:lighten($orange, 20%);
 		}
 	}
 }
@@ -21,11 +21,13 @@
 ***************************/
 .container-block-elem{
 	height: auto;
-	background-color: $blanc;
+	background-color: lighten($bleufonce, 20%);
 	padding: 26px 8px 26px 26px; 
 	margin: 0px 26px 26px 26px; 
+	color:$blanc;
+
 	&:h2{
-		color:$bleufonce;
+		color:$blanc;
 	}
 	.bg-success{
 		width: 50%;
@@ -34,7 +36,8 @@
 	}
 	p{
 		font-size: 1.5em;
-		line-height: 1.75; 
+		line-height: 1.75;
+		color:$blanc; 
 	}
 	a{
 		font-size: 1.12em;
@@ -48,7 +51,7 @@
 
 .container-block-title {
 	cursor: pointer;
-	color: $text;
+	color: $blanc;
 }
 
 /***************************
@@ -65,10 +68,10 @@
 .aside-title {
 	@extend .container-block-title;
 	font-size: 1.4em;
-	
+	color: $text;
 }
 
-.side{
+.side {
 	width: 100%;
 	float: right;
 	margin: 20px;
@@ -104,7 +107,7 @@
 }
 
 .social {
-	background-color: #fff;
+	background-color: transparent !important;
 	width: 33%;
 	float: left;
 
@@ -162,6 +165,7 @@
 
 .experience-type {
 	margin-bottom: 0px;
+
 	
 }
 
@@ -174,6 +178,9 @@
 .panel {
 		border-radius: 0px;
 		border-color: $text;
+}
+.panel-body {
+	color:$text !important;
 }
 
 /***************************
