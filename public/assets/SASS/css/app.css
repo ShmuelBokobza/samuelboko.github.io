@@ -16,28 +16,58 @@ body {
   width: 100%;
   margin: 0 auto;
   margin-top: -40px;
-  font-family: "Open sans" sans-serif;
+  font-family: "Open-sans", arial;
   line-height: 1.75;
   font-size: 1em;
   color: #737373;
 }
 
 /***************************
+	Polices de Caractère 
+***************************/
+/* @font-face {
+	Standard
+    font-family: Raleway_Standard;
+    src: url(../../font/Raleway/Raleway-Bold.ttf);
+	Semi-Bold
+    font-family: Raleway_Semi-Bold;
+    src: url(../../font/Raleway/Raleway-SemiBold.ttf);
+	Moyen
+    font-family: Raleway_Moyen;
+    src: url(../../font/Raleway/Raleway-Medium.ttf);
+	Extra-Bold
+    font-family: Raleway_Extra-Bold;
+    src: url(../../font/Raleway/Raleway-ExtraBold.ttf);
+	Lourd
+    font-family: Raleway_Lourde;
+    src: url(../../font/Raleway/Raleway-Heavy.ttf);
+	Léger
+    font-family: Raleway_Leger;
+    src: url(../../font/Raleway/Raleway-Light.ttf);
+	Très leger
+    font-family: Raleway_Tres-Leger;
+    src: url(../../font/Raleway/Raleway-ExtraLight.ttf);
+	Fin
+    font-family: Raleway_Fin;
+    src: url(../../font/Raleway/Raleway-Thin.ttf);
+}
+ */
+/***************************
 	Base des titres 
 ***************************/
-/* line 38, ../sass/base/_base.scss */
+/* line 68, ../sass/base/_base.scss */
 h1 {
   font-size: 7.125em;
 }
 
-/* line 42, ../sass/base/_base.scss */
+/* line 72, ../sass/base/_base.scss */
 h2 {
   font-size: 3em;
   line-height: 1.25;
   color: #737373;
   cursor: default;
 }
-/* line 47, ../sass/base/_base.scss */
+/* line 77, ../sass/base/_base.scss */
 h2:hover {
   color: #8d8d8d;
 }
@@ -45,13 +75,13 @@ h2:hover {
 /***************************
 	Base des liens 
 ***************************/
-/* line 56, ../sass/base/_base.scss */
+/* line 86, ../sass/base/_base.scss */
 a {
   font-size: 2em;
   color: white;
   text-decoration: none;
 }
-/* line 60, ../sass/base/_base.scss */
+/* line 90, ../sass/base/_base.scss */
 a:hover {
   text-decoration: none;
   color: #ecf0f1;
@@ -60,13 +90,13 @@ a:hover {
 /***************************
 	Base des boutons 
 ***************************/
-/* line 70, ../sass/base/_base.scss */
+/* line 100, ../sass/base/_base.scss */
 .btn {
   border-radius: 0px;
   float: right;
 }
 
-/* line 75, ../sass/base/_base.scss */
+/* line 105, ../sass/base/_base.scss */
 textarea {
   margin-bottom: 12px;
 }
@@ -74,7 +104,7 @@ textarea {
 /***************************
 	Base du bloc container 
 ***************************/
-/* line 85, ../sass/base/_base.scss */
+/* line 115, ../sass/base/_base.scss */
 .container .container-block {
   float: left;
 }
@@ -105,62 +135,69 @@ textarea {
 /* line 6, ../sass/module/_header.scss */
 header {
   background-color: #7ed2ec;
+  height: 165px;
 }
 
-/* line 10, ../sass/module/_header.scss */
+/* line 12, ../sass/module/_header.scss */
+.header-mini {
+  height: 100px;
+  background-color: #737373;
+}
+
+/* line 18, ../sass/module/_header.scss */
 .header-logo {
   float: left;
   margin: 12px;
 }
 
-/* line 15, ../sass/module/_header.scss */
+/* line 23, ../sass/module/_header.scss */
 .header-menu {
   float: right;
 }
 
-/* line 19, ../sass/module/_header.scss */
+/* line 27, ../sass/module/_header.scss */
 .header-titre {
   color: #ecf0f1;
 }
 
-/* line 23, ../sass/module/_header.scss */
+/* line 31, ../sass/module/_header.scss */
 .header-navigation {
   float: right;
 }
 
-/* line 27, ../sass/module/_header.scss */
+/* line 35, ../sass/module/_header.scss */
 .nav-pills > li > a {
   border-radius: 0px;
   background-color: #7795b4;
 }
-/* line 29, ../sass/module/_header.scss */
+/* line 37, ../sass/module/_header.scss */
 .nav-pills > li > a:hover {
   background-color: #b9c8d8;
 }
 
-/* line 34, ../sass/module/_header.scss */
+/* line 42, ../sass/module/_header.scss */
 .nav-pills > li.active > a {
   background-color: #7795b4;
   color: white;
   border-radius: 0px;
 }
-/* line 38, ../sass/module/_header.scss */
+/* line 46, ../sass/module/_header.scss */
 .nav-pills > li.active > a:hover {
   background-color: #7795b4;
 }
 
-/* line 44, ../sass/module/_header.scss */
+/* line 52, ../sass/module/_header.scss */
 .page-header {
   padding-bottom: 0px;
 }
 
-/* line 49, ../sass/module/_header.scss */
+/* line 57, ../sass/module/_header.scss */
 .dropdown {
   float: right;
   margin: 26px 0px 0px 0px;
 }
 
-/* line 53, ../sass/module/_header.scss */
+/* line 61, ../sass/module/_header.scss */
 .dropdown-menu {
   width: 20%;
   top: 32px;
@@ -169,7 +206,7 @@ header {
   float: right;
 }
 
-/* line 62, ../sass/module/_header.scss */
+/* line 70, ../sass/module/_header.scss */
 .dropdown-menu > li {
   font-size: 0.8em;
 }
@@ -200,7 +237,7 @@ header {
 /* line 22, ../sass/module/_container.scss */
 .container-block-elem {
   height: auto;
-  background-color: #587ca0;
+  background-color: #b9c8d8;
   padding: 26px 8px 26px 26px;
   margin: 0px 26px 26px 26px;
   color: #ecf0f1;

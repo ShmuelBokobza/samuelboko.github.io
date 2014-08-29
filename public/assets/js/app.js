@@ -1,13 +1,38 @@
 $(function () {
 
+	/* Scrolling top menu */
+	$(document).on('scroll', function(e){
+		if($(document).scrollTop() > 80){
+			$('#header').addClass('header-mini')
+		} else {
+			$('#header').removeClass('header-mini')
+		};
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 var $window     = $(window);
 var header      = $('#header');
 var headerLogo  = $('.header-logo');
 var headerTitre = $('.header-titre');
 var headerLogin = $('.header-login');
 var block       = $('.container-block-elem');
-var blockB       = $('.container-block-elem .btn');
-var side          = $('#aside');
+var blockB      = $('.container-block-elem .btn');
+var side        = $('#aside');
 
 
 side.on('click', function() {
@@ -65,7 +90,7 @@ blockB.on('mouseover', function() {
 
 	}
 
-});
+});*/
 
 
 

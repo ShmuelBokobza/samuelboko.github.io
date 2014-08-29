@@ -26,12 +26,42 @@ body{
 	width: 100%;
 	margin: 0 auto;
 	margin-top: -40px;
-	font-family: "Open sans" sans-serif;
+	font-family: "Open-sans", arial;
 	line-height: 1.75;
 	font-size: 1em;
 	color: $text;
 }
 
+/***************************
+	Polices de Caractère 
+***************************/
+/* @font-face {
+	Standard
+    font-family: Raleway_Standard;
+    src: url(../../font/Raleway/Raleway-Bold.ttf);
+	Semi-Bold
+    font-family: Raleway_Semi-Bold;
+    src: url(../../font/Raleway/Raleway-SemiBold.ttf);
+	Moyen
+    font-family: Raleway_Moyen;
+    src: url(../../font/Raleway/Raleway-Medium.ttf);
+	Extra-Bold
+    font-family: Raleway_Extra-Bold;
+    src: url(../../font/Raleway/Raleway-ExtraBold.ttf);
+	Lourd
+    font-family: Raleway_Lourde;
+    src: url(../../font/Raleway/Raleway-Heavy.ttf);
+	Léger
+    font-family: Raleway_Leger;
+    src: url(../../font/Raleway/Raleway-Light.ttf);
+	Très leger
+    font-family: Raleway_Tres-Leger;
+    src: url(../../font/Raleway/Raleway-ExtraLight.ttf);
+	Fin
+    font-family: Raleway_Fin;
+    src: url(../../font/Raleway/Raleway-Thin.ttf);
+}
+ */
 /***************************
 	Base des titres 
 ***************************/
