@@ -232,3 +232,34 @@ table .badge {
 	background-color:$socialfb;
 	font-size: 1.8em;
 }
+
+/***************************
+		ADMIN
+***************************/
+
+
+.nav-admin{
+	margin-bottom: 26px;
+}
+
+.nav-admin > li > a{
+	color: $text;
+}
+
+.container-admin{
+	float: left;
+}
+
+.aside-admin{
+	float: left;
+	height: 500px;
+	background-color: $bleufonce;
+	border-top: 1px solid $blanc;
+
+}
+
+.btn-admin{
+	float: left;
+	margin-top: 20px;
+	
+}

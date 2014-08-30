@@ -1,3 +1,4 @@
+
 /***************************
 		Couleurs 
 ***************************/
@@ -24,7 +25,7 @@ body{
 	background-color: $blancbody;
 	width: 100%;
 	margin: 0 auto;
-	font-family: "Open-sans", arial;
+	font-family: "samuel", helvetica;
 	line-height: 1.75;
 	font-size: 1em;
 	color: $text;
@@ -33,9 +34,12 @@ body{
 /***************************
 	Polices de Caractère 
 ***************************/
+
+/* @include font-face("samuel", font-files("font/Raleway/Raleway-Bold.ttf", "font/Raleway/Raleway-Bold.ttf", "font/Raleway/Raleway-Bold.ttf"), "font/Raleway/Raleway-Bold.ttf");
+ */
 /* @font-face {
 	Standard
-    font-family: Raleway_Standard;
+    font-family: _Standard;
     src: url(../../font/Raleway/Raleway-Bold.ttf);
 	Semi-Bold
     font-family: Raleway_Semi-Bold;

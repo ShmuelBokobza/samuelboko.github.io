@@ -1,13 +1,15 @@
 (function(){
-	
+
+	$('#tabadmin  a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+        $(".btn-admin").click(function() {
+            $(".aside-admin").slideToggle("slow");
+        });
+
+
+
 }());
 
-/* Scrolling top menu 
-	$(document).on('scroll', function(e){
-		if($(document).scrollTop() > 80){
-			$('#header').addClass('header-mini')
-		} else {
-			$('#header').removeClass('header-mini')
-		};
-	});
-*/
