@@ -8,13 +8,6 @@ header{
 	height: 165px;
 }
 
-
-.header-mini{
-	height: 100px;
-	background-color: $text;
-	
-}
-
 .header-logo{
 	float:left;
 	margin: 12px ;
@@ -58,6 +51,12 @@ header{
 	float: right;
 	margin:26px 0px 0px 0px;
 }
+
+.dropdown-small{
+	float: right;
+	margin-top: 100px;
+}
+
 .dropdown-menu {
 	width:20%;
 	top:32px;

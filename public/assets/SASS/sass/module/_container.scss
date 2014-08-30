@@ -21,7 +21,7 @@
 ***************************/
 .container-block-elem{
 	height: auto;
-	background-color: lighten($bleufonce, 50%);
+	background-color: #425B8A;
 	padding: 26px 8px 26px 26px; 
 	margin: 0px 26px 26px 26px; 
 	color:$blanc;
@@ -165,8 +165,14 @@
 
 .experience-type {
 	margin-bottom: 0px;
+}
 
-	
+.experience-type > img{
+	background-color:$bleu;
+}
+
+.experience-type > img:hover{
+	background-color:$text;
 }
 
 .experience-carte {

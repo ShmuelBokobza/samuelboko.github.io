@@ -5,17 +5,11 @@
 /***************************
 		Fin Couleurs 
 ***************************/
-/* line 20, ../sass/base/_base.scss */
-html {
-  background-color: white;
-}
-
-/* line 24, ../sass/base/_base.scss */
+/* line 23, ../sass/base/_base.scss */
 body {
   background-color: white;
   width: 100%;
   margin: 0 auto;
-  margin-top: -40px;
   font-family: "Open-sans", arial;
   line-height: 1.75;
   font-size: 1em;
@@ -55,19 +49,19 @@ body {
 /***************************
 	Base des titres 
 ***************************/
-/* line 68, ../sass/base/_base.scss */
+/* line 66, ../sass/base/_base.scss */
 h1 {
   font-size: 7.125em;
 }
 
-/* line 72, ../sass/base/_base.scss */
+/* line 70, ../sass/base/_base.scss */
 h2 {
   font-size: 3em;
   line-height: 1.25;
   color: #737373;
   cursor: default;
 }
-/* line 77, ../sass/base/_base.scss */
+/* line 75, ../sass/base/_base.scss */
 h2:hover {
   color: #8d8d8d;
 }
@@ -75,13 +69,13 @@ h2:hover {
 /***************************
 	Base des liens 
 ***************************/
-/* line 86, ../sass/base/_base.scss */
+/* line 84, ../sass/base/_base.scss */
 a {
   font-size: 2em;
   color: white;
   text-decoration: none;
 }
-/* line 90, ../sass/base/_base.scss */
+/* line 88, ../sass/base/_base.scss */
 a:hover {
   text-decoration: none;
   color: #ecf0f1;
@@ -90,13 +84,13 @@ a:hover {
 /***************************
 	Base des boutons 
 ***************************/
-/* line 100, ../sass/base/_base.scss */
+/* line 98, ../sass/base/_base.scss */
 .btn {
   border-radius: 0px;
   float: right;
 }
 
-/* line 105, ../sass/base/_base.scss */
+/* line 103, ../sass/base/_base.scss */
 textarea {
   margin-bottom: 12px;
 }
@@ -104,11 +98,47 @@ textarea {
 /***************************
 	Base du bloc container 
 ***************************/
-/* line 115, ../sass/base/_base.scss */
-.container .container-block {
+/* line 111, ../sass/base/_base.scss */
+.container-block {
   float: left;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+  /* line 3, ../sass/base/_media.scss */
+  .container .col-md-9 {
+    width: 100%;
+  }
+
+  /* line 7, ../sass/base/_media.scss */
+  .dropdown {
+    display: none;
+  }
+
+  /* line 11, ../sass/base/_media.scss */
+  nav {
+    display: none;
+  }
+
+  /* line 15, ../sass/base/_media.scss */
+  .nav > li {
+    display: inline-block;
+  }
+}
+@media (min-width: 768px) {
+  /* line 21, ../sass/base/_media.scss */
+  .dropdown-small {
+    display: none;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* line 33, ../sass/base/_media.scss */
+  .dropdown-small {
+    display: none;
+  }
+}
 /***************************
 ****************************
 		GRILLE
@@ -138,66 +168,66 @@ header {
   height: 165px;
 }
 
-/* line 12, ../sass/module/_header.scss */
-.header-mini {
-  height: 100px;
-  background-color: #737373;
-}
-
-/* line 18, ../sass/module/_header.scss */
+/* line 11, ../sass/module/_header.scss */
 .header-logo {
   float: left;
   margin: 12px;
 }
 
-/* line 23, ../sass/module/_header.scss */
+/* line 16, ../sass/module/_header.scss */
 .header-menu {
   float: right;
 }
 
-/* line 27, ../sass/module/_header.scss */
+/* line 20, ../sass/module/_header.scss */
 .header-titre {
   color: #ecf0f1;
 }
 
-/* line 31, ../sass/module/_header.scss */
+/* line 24, ../sass/module/_header.scss */
 .header-navigation {
   float: right;
 }
 
-/* line 35, ../sass/module/_header.scss */
+/* line 28, ../sass/module/_header.scss */
 .nav-pills > li > a {
   border-radius: 0px;
   background-color: #7795b4;
 }
-/* line 37, ../sass/module/_header.scss */
+/* line 30, ../sass/module/_header.scss */
 .nav-pills > li > a:hover {
   background-color: #b9c8d8;
 }
 
-/* line 42, ../sass/module/_header.scss */
+/* line 35, ../sass/module/_header.scss */
 .nav-pills > li.active > a {
   background-color: #7795b4;
   color: white;
   border-radius: 0px;
 }
-/* line 46, ../sass/module/_header.scss */
+/* line 39, ../sass/module/_header.scss */
 .nav-pills > li.active > a:hover {
   background-color: #7795b4;
 }
 
-/* line 52, ../sass/module/_header.scss */
+/* line 45, ../sass/module/_header.scss */
 .page-header {
   padding-bottom: 0px;
 }
 
-/* line 57, ../sass/module/_header.scss */
+/* line 50, ../sass/module/_header.scss */
 .dropdown {
   float: right;
   margin: 26px 0px 0px 0px;
 }
 
-/* line 61, ../sass/module/_header.scss */
+/* line 55, ../sass/module/_header.scss */
+.dropdown-small {
+  float: right;
+  margin-top: 100px;
+}
+
+/* line 60, ../sass/module/_header.scss */
 .dropdown-menu {
   width: 20%;
   top: 32px;
@@ -206,7 +236,7 @@ header {
   float: right;
 }
 
-/* line 70, ../sass/module/_header.scss */
+/* line 69, ../sass/module/_header.scss */
 .dropdown-menu > li {
   font-size: 0.8em;
 }
@@ -237,7 +267,7 @@ header {
 /* line 22, ../sass/module/_container.scss */
 .container-block-elem {
   height: auto;
-  background-color: #b9c8d8;
+  background-color: #425B8A;
   padding: 26px 8px 26px 26px;
   margin: 0px 26px 26px 26px;
   color: #ecf0f1;
@@ -403,20 +433,30 @@ header {
   margin-bottom: 0px;
 }
 
-/* line 172, ../sass/module/_container.scss */
+/* line 170, ../sass/module/_container.scss */
+.experience-type > img {
+  background-color: #7ed2ec;
+}
+
+/* line 174, ../sass/module/_container.scss */
+.experience-type > img:hover {
+  background-color: #737373;
+}
+
+/* line 178, ../sass/module/_container.scss */
 .experience-carte {
   height: 26%;
   margin: 8px 8px 8px 8px;
   border: 0px;
 }
 
-/* line 178, ../sass/module/_container.scss */
+/* line 184, ../sass/module/_container.scss */
 .panel {
   border-radius: 0px;
   border-color: #737373;
 }
 
-/* line 182, ../sass/module/_container.scss */
+/* line 188, ../sass/module/_container.scss */
 .panel-body {
   color: #737373 !important;
 }
@@ -424,11 +464,11 @@ header {
 /***************************
 	EXPÉRIENCES
 ***************************/
-/* line 191, ../sass/module/_container.scss */
+/* line 197, ../sass/module/_container.scss */
 .experience-single .bg-success {
   width: 100%;
 }
-/* line 194, ../sass/module/_container.scss */
+/* line 200, ../sass/module/_container.scss */
 .experience-single .experience-badge {
   font-size: 1em;
 }
@@ -436,16 +476,16 @@ header {
 /***************************
 	MON COMPTE
 ***************************/
-/* line 202, ../sass/module/_container.scss */
+/* line 208, ../sass/module/_container.scss */
 .compte .nav-pills > li {
   background-color: #34495e;
 }
-/* line 204, ../sass/module/_container.scss */
+/* line 210, ../sass/module/_container.scss */
 .compte .nav-pills > li:first-child {
   margin-left: 25px;
 }
 
-/* line 210, ../sass/module/_container.scss */
+/* line 216, ../sass/module/_container.scss */
 .compte .nav-pills > li.active > a {
   background-color: #587ca0;
   color: white;
@@ -455,12 +495,12 @@ header {
 /***************************
 		TRAJET
 ***************************/
-/* line 221, ../sass/module/_container.scss */
+/* line 227, ../sass/module/_container.scss */
 table {
   text-align: center;
 }
 
-/* line 225, ../sass/module/_container.scss */
+/* line 231, ../sass/module/_container.scss */
 table .badge {
   background-color: #2980b9;
   font-size: 1.8em;

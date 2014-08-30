@@ -17,32 +17,44 @@
     </head>
 <body>
 
-<header class="header page-header container-fluid">
-<div class="row">
+<header class="container-fluid" id="header">
     <div class="dropdown col-md-1"></div>
-    <div class="dropdown">
+    <div class="dropdown header-login">
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
             Rejoignez-nous
         <span class="caret"></span>
         </button>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="connexion.html">Connexion</a></li>
-                <li role="presentation"><a role="menuitem" tabindex="-1" href="inscription.html">Inscription</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="public/assets/view/connexion.html">Connexion</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="public/assets/view/inscription.html">Inscription</a></li>
                 <li role="presentation" class="divider"></li>
                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Paramètre</a></li>
             </ul>
     </div>
-        <a href="../../../index.html" class="header-logo">
-            <img class="img-circle" src="../images/logo.png" alt="Logo">
-        </a>
-        <h1 class="header-titre">Go Mobility </h1>
-
-            <ul class="nav nav-pills col-md-5 header-navigation" role="navigation">
-                <li><a href="../../../index.html" class="header-menu-item">Le Projet</a></li>
-                <li><a href="experiences.html" class="header-menu-item">Vos Expériences</a></li>
-                <li><a href="participer.html" class="header-menu-item">Je Participe</a></li>
+    <div class="dropdown-small header-login">
+        <button class="btn btn-default dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            <span class="glyphicon glyphicon-th"></span>
+        </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="public/assets/view/inscription.html">Le Projet</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="public/assets/view/connexion.html">Vos Expériences</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="public/assets/view/inscription.html">Je participe</a></li>
+                <li role="presentation" class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="public/assets/view/connexion.html">Connexion</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="public/assets/view/inscription.html">Inscription</a></li>
             </ul>
     </div>
+        <a href="#" class="header-logo">
+            <img class="img-circle" src="../images/dessin.png" alt="Logo">
+        </a>
+        <h1 class="header-titre">Go Mobility </h1>
+        <nav>
+            <ul class="nav nav-pills col-md-5 header-navigation" role="navigation">
+                <li class="active"><a href="#" class="header-menu-item">Le Projet</a></li>
+                <li><a href="public/assets/view/experiences.html" class="header-menu-item">Vos Expériences</a></li>
+                <li><a href="public/assets/view/participer.html" class="header-menu-item">Je Participe</a></li>
+            </ul>
+        </nav>
 </header>
 
 <div class="container-fluid container">
@@ -60,8 +72,7 @@
             <a href="#"><h2 class="container-block-title">[DEPART] - [DESTINATION] [TransportTrajet]</h2></a>
             <p class="experience bg-success">par <strong>Auteur </strong>le <em>10/07/2014</em></p>
             <div class="experience-carte">
-                <iframe class="experience-carte experiencesList"src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d41990.949205168195!2d2.3191352107576217!3d48.86899631254911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e2!4m5!1s0x47e66e705b049835%3A0x6f6e6094d0d9258!2sLa+Chapelle!3m2!1d48.884409!2d2.36029!4m5!1s0x47e671de2c502319%3A0x32a2024530404ed1!2sParis!3m2!1d48.8534809!2d2.3437474!5e0!3m2!1sfr!2sfr!4v1407164475804" width="100%">        
-                </iframe>
+                <iframe class="experience-carte experiencesList"src="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d41990.949205168195!2d2.3191352107576217!3d48.86899631254911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e2!4m5!1s0x47e66e705b049835%3A0x6f6e6094d0d9258!2sLa+Chapelle!3m2!1d48.884409!2d2.36029!4m5!1s0x47e671de2c502319%3A0x32a2024530404ed1!2sParis!3m2!1d48.8534809!2d2.3437474!5e0!3m2!1sfr!2sfr!4v1407164475804" width="100%">      </iframe>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -71,14 +82,57 @@
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="panel panel-default">
                 <p class="experience-type panel-body">
-                    Parcours touristique
+                    Type de Parcours :<br>
+                    <img src="../images/touriste.png" alt="">
                     <span class="experience-badge badge">FACILE</span>
                 </p>
             </div>
-             <a href="#">
-                <button type="button" class="btn btn-primary">Découvrir et donner votre avis sur ce trajet !</button>
+             <a href="experiences.html">
+                <button type="button" class="btn btn-primary">
+                <span class="glyphicon glyphicon-hand-left"></span> Retour aux dernières Expériences</button>
             </a>
         </article>
+
+        <div class="form-group">
+    <label for="">Commenter</label>
+    <textarea class="form-control" rows="3"></textarea>
+  </div>
+
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object img-circle" src="../images/logo.png" alt="...">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            <p><p>Lorem Elsass ipsum réchime amet non Choucroute knack  tchao bissame hopla. Wotch a kofee avec ton BibalaekaesSalat et ta wurscht ?</p>
+            <p>Yeuh non che suis au réchime, je ne mange plus que des Grumbeere light et che fais de la chym avec Chulien. Tiens, un Picon sur le comptoir.</p>
+            <p>Allez tchao bissame !</p></p>
+          </div>
+                  <div class="media">
+                      <a class="pull-left" href="#">
+                        <img class="media-object img-circle" src="../images/logo.png" alt="...">
+                      </a>
+                      <div class="media-body">
+                        <h4 class="media-heading">Media heading</h4>
+                        <p><p>Lorem Elsass ipsum réchime amet non Choucroute knack  tchao bissame hopla. Wotch a kofee avec ton BibalaekaesSalat et ta wurscht ?</p>
+                        <p>Yeuh non che suis au réchime, je ne mange plus que des Grumbeere light et che fais de la chym avec Chulien. Tiens, un Picon sur le comptoir.</p>
+                        <p>Allez tchao bissame !</p></p>
+                      </div>
+                    </div>
+        </div>
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object img-circle" src="../images/logo.png" alt="...">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Media heading</h4>
+            <p><p>Lorem Elsass ipsum réchime amet non Choucroute knack  tchao bissame hopla. Wotch a kofee avec ton BibalaekaesSalat et ta wurscht ?</p>
+            <p>Yeuh non che suis au réchime, je ne mange plus que des Grumbeere light et che fais de la chym avec Chulien. Tiens, un Picon sur le comptoir.</p>
+            <p>Allez tchao bissame !</p></p>
+          </div>
+        </div>
+
+
     </div>
 
         <div class="container-fluid aside col-md-3">

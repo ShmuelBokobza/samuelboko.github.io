@@ -18,14 +18,12 @@ $socialgp :#e74c3c;
 		Fin Couleurs 
 ***************************/
 html{
-	background-color: $blancbody;
 }
 
 body{
 	background-color: $blancbody;
 	width: 100%;
 	margin: 0 auto;
-	margin-top: -40px;
 	font-family: "Open-sans", arial;
 	line-height: 1.75;
 	font-size: 1em;
@@ -106,13 +104,10 @@ textarea {
 	margin-bottom: 12px;
 }
 
-
-
 /***************************
 	Base du bloc container 
 ***************************/
-.container {
+
 	.container-block {
 		float: left;
 	}
-}

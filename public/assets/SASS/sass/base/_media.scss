@@ -1,0 +1,36 @@
+/* Small devices (tablets, 768px and up) */
+@media(max-width:767px){
+	.container .col-md-9{
+		width: 100%;
+	}
+
+	.dropdown{
+		display: none;
+	}
+	
+	nav {
+		display: none;
+	}
+
+	.nav > li{
+		display: inline-block;
+	}
+}
+
+@media(min-width:768px){
+	.dropdown-small{
+		display: none;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media(min-width:992px){
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media(min-width:1200px){
+	.dropdown-small{
+		display: none;
+	}
+}
